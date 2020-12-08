@@ -1,0 +1,12 @@
+header {
+  text-align: center;
+  background-color: aqua;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/*# sourceMappingURL=header.css.map */

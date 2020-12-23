@@ -3,14 +3,25 @@ import '../../css/header.css';
 
 const Header = () => {
     return(
-        <header>
-            <nav>
-                <a href="/about">About</a>
-                <a href="/projects">Projects</a>
-                <a href="/resume">Resume</a>
-                <a href="/contact">Contact</a>
-            </nav>
-        </header>
+        <div className="header">
+            <div className="nav">
+                <div>
+                    <a href="/about">About</a>
+                </div>
+                <div>
+                    <a href="/projects">Projects</a>
+                </div>
+                <div>
+                    <a href="/resume">Resume</a>
+                </div>
+                <div>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+            <div className="name">
+                <h2>Whitney Smith</h2>
+            </div>
+        </div>
     )
 }
 

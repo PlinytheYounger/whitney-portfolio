@@ -1,0 +1,39 @@
+
+
+.container {
+    height: 100%;
+}
+
+.main {
+    height: 80vh;
+}
+
+//######################
+// ABOUT 
+//######################
+// main div > 'title'
+// container div > 'about-information'
+// left div bio > 'about-bio'
+// left div icons > 'social-icons'
+
+.about-information {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+//######################
+// PROJECTS
+//######################
+
+// main div > 'projects-container'
+// each project div class > 'project container' id > 'project-NUMBER-container'
+
+
+//######################
+// RESUME
+//######################
+
+//######################
+// CONTACT
+//######################

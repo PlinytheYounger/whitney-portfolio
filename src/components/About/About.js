@@ -4,7 +4,6 @@ const About = () => {
     return(
         <>
             <div className="title">
-                <h2>Whitney Smith</h2>
                 <h2>Software Developer</h2>
             </div>
             <div className="about-information">

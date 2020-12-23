@@ -1,12 +1,19 @@
-header {
+.header {
   text-align: center;
   background-color: aqua;
+  height: 10vh;
 }
 
-nav {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+  vertical-align: middle;
+}
+.nav div a {
+  color: black;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=header.css.map */

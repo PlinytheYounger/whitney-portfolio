@@ -6,6 +6,7 @@ import About from './About/About';
 import Projects from './Projects/Projects';
 import Resume from './Resume/Resume';
 import Contact from './Contact/Contact';
+import '../css/main.css';
 
 const Container = () => {
     return (

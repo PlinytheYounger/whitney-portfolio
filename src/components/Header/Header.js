@@ -1,17 +1,27 @@
 import React from 'react';
-import Navigation from './Navigation';
-// import '../../../public/css/header.css'
+import '../../css/header.css';
 
 const Header = () => {
     return(
-        <header>
-            <nav>
-                <Navigation navHeading="About" />
-                <Navigation navHeading="Projects" />
-                <Navigation navHeading="Resume" />
-                <Navigation navHeading="Contact" />
-            </nav>
-        </header>
+        <div className="header">
+            <div className="nav">
+                <div>
+                    <a href="/about">About</a>
+                </div>
+                <div>
+                    <a href="/projects">Projects</a>
+                </div>
+                <div>
+                    <a href="/resume">Resume</a>
+                </div>
+                <div>
+                    <a href="/contact">Contact</a>
+                </div>
+            </div>
+            <div className="name">
+                <h2>Whitney Smith</h2>
+            </div>
+        </div>
     )
 }
 

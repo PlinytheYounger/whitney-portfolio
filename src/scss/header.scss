@@ -1,0 +1,26 @@
+// Class Name in Header & Navigation Components
+
+// header
+// nav
+// #nav-component
+
+.header {
+    text-align: center;
+    background-color: aqua;
+    height: 10vh;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    vertical-align: middle;
+    div {
+        a {
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+

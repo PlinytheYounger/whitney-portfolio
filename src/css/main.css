@@ -1,0 +1,21 @@
+.container {
+  height: 100%;
+}
+
+.main {
+  height: 80vh;
+}
+
+.about-information {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contact-me-form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+
+/*# sourceMappingURL=main.css.map */

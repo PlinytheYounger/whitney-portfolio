@@ -16,7 +16,6 @@ const Container = () => {
             <Switch>
                 <Route path="/about" component={About} />
                 <Route path="/projects" component={Projects} />
-                <Route path="/resume" component={Resume} />
                 <Route path="/contact" component={Contact} />
             </Switch>
             </div>

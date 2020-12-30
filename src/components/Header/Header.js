@@ -12,14 +12,15 @@ const Header = () => {
                     <a href="/projects">Projects</a>
                 </div>
                 <div>
-                    <a href="/resume">Resume</a>
-                </div>
-                <div>
                     <a href="/contact">Contact</a>
                 </div>
             </div>
             <div className="name">
-                <h2>Whitney Smith</h2>
+                <h1>Whitney Smith</h1>
+            </div>
+            <div className="social-icons">
+                    <p>Github</p>
+                    <p>LinkedIn</p>
             </div>
         </div>
     )

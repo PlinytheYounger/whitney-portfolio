@@ -1,63 +1,56 @@
-import React from 'react';
+import React, {setState} from 'react';
+import useContactForm from './CustomHooks';
 
-class Contact extends React.Component {
-    state = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-    }
-
-    handleSubmit = (event) => {
-        event.preventDefault();
-        console.log(event.target);
-    }
-
-    handleChange = (event) => {
-        this.setState({
-            name: event.target.name,
-            email: event.target.email,
-            subject: event.target.subject,
-            message: event.target.message
+const Contact = () => {
+    const signup = (inputs) => {
+        setState({
+            ...inputs
         })
+        console.log(`Form submitted! Name: ${inputs.name} Email: ${inputs.email}`);
     }
 
-    render() {
-        return(
+    // initialize the custom hook by destructuring
+    const {inputs, handleChange, handleSubmit} = useContactForm(signup);
+
+
+    // ************************************* //
+    // RETURN //
+    // ************************************* //
+
+    return(
             <>
                 <div className="title">
                     <h2>Contact</h2>
                 </div>
                 <div>
-                    <form className="contact-me-form" onSubmit={this.handleSubmit} onChange={this.handleChange} >
+                    <form className="contact-me-form" onSubmit={handleSubmit}>
                         <div>
                             <label>Name</label>
-                            <input type="text" value={this.state.name} onChange={this.handleChange} placeholder="Name" />
+                            <input type="text" name="name" placeholder="Name" onChange={handleChange} value={inputs.name} />
                         </div>
 
                         <div>
                             <label>Email</label>
-                            <input type="text" value={this.state.email} onChange={this.handleChange} placeholder="Email" />
+                            <input type="text" name="email" placeholder="Email" onChange={handleChange} value={inputs.email} />
                         </div>
                         
                         <div>
                             <label>Subject</label>
-                            <input type="text" value={this.state.subject} onChange={this.handleChange} placeholder="Subject" />
+                            <input type="text" name="subject" placeholder="Subject" onChange={handleChange} value={inputs.subject} />
                         </div>
 
                         <div>
                             <label>Message</label>
-                            <textarea value={this.state.message} onChange={this.handleChange} placeholder="Message" />
+                            <textarea name="message" placeholder="Message" onChange={handleChange} value={inputs.message} />
                         </div>
 
                         <div>
-                            <input type="submit" value="Send" />
+                            <button type="submit">Contact Me</button>
                         </div>
                     </form>
                 </div>
             </>
         )
     }
-}
 
 export default Contact;

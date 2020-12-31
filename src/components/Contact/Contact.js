@@ -1,5 +1,6 @@
 import React, {setState} from 'react';
 import useContactForm from './CustomHooks';
+import '../../css/contact.css';
 
 const Contact = () => {
     const signup = (inputs) => {

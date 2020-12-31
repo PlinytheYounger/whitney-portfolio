@@ -17,6 +17,7 @@ const Header = () => {
             </div>
             <div className="name">
                 <h1>Whitney Smith</h1>
+                <h2>Software Developer</h2>
             </div>
             <div className="social-icons">
                     <p>Github</p>

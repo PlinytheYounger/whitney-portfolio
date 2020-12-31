@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* COLOR PALETTE 
 ADOBE = #8B5D41
 PINE = #555548
@@ -8,10 +7,8 @@ PUEBLO = #D2BEB0
 CLAY = #D0C6BC
 SAND = #E8E4E0
 */
-
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
@@ -23,40 +20,9 @@ li {
 }
 
 .main {
-  height: 75vh;
   background-color: #E8E4E0;
   color: #555548;
-  padding-top: 4%;
-}
-
-.about-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.title {
-  text-align: center;
-}
-
-.resume {
-  width: 45%;
-  margin-left: 5%;
-}
-
-.social-photo {
-  width: 45%;
-  text-align: center;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contact-me-form {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+  padding-bottom: 2.5%;
 }
 
 /*# sourceMappingURL=main.css.map */

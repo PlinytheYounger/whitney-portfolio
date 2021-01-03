@@ -4,7 +4,7 @@ import '../../css/projects.css';
 const Projects = () => {
     return(
         <>
-            <div className="title">
+            <div className="title" id="projects">
                 <h2>Projects</h2>
             </div>
             <div className="projects-container">

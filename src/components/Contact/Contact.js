@@ -92,7 +92,7 @@ class Contact extends React.Component {
         // check to see whether valid is truthy
         if (rules.required) {
             // if value is not equal to an empty string return true and set that equal to isValid
-            isValid = value.trim() !== '' && isValid;
+            isValid = value.trim() !== '';
         }
         // return true or false to changeHandler function
 
@@ -144,11 +144,14 @@ class Contact extends React.Component {
                             <h2>Contact</h2>
                             {formElementsArr.map((object) => {
                                 return(
-                                    <Input elementType={object.config.elementType} 
-                                    elementConfig={object.config.elementConfig} 
-                                    value={object.value} 
-                                    key={object.id} 
-                                    changed={(event) => this.inputChangedHandler(event, object.id)}/>
+                                    <Input 
+                                        elementType={object.config.elementType} 
+                                        elementConfig={object.config.elementConfig} 
+                                        value={object.value} 
+                                        key={object.id} 
+                                        changed={(event) => this.inputChangedHandler(event, object.id)}
+                                        invalid={object.valid}
+                                    />
                                 )
                             })}
                             

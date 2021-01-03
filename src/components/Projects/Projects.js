@@ -1,38 +1,38 @@
 import React from 'react';
 import '../../css/projects.css';
+import ProjectElement from './Project-Element';
 
 const Projects = () => {
+    const projectArr = [
+        {
+            name: 'Lobbyists & Bills',
+            gitHubUrl: '',
+            description: '',
+            photoUrl: '' 
+        },
+        {
+            name: 'Study Buddy',
+            gitHubUrl: '',
+            description: '',
+            photoUrl: '' 
+        },
+        {
+            name: 'Travel Ease',
+            gitHubUrl: '',
+            description: '',
+            photoUrl: '' 
+        },
+    ]
     return(
         <>
             <div className="title" id="projects">
-                <h2>Projects</h2>
+                <h1>Projects</h1>
             </div>
             <div className="projects-container">
-                <div className="project-container" id="project-one-container">
-                    <h2>Study Buddy</h2> {/* embed link to project */}
-                    <h3>Link to Code</h3>
-                    <p>Description</p>
-                </div>
-                <div className="project-container" id="project-two-container">
-                    <h2>Study Buddy</h2> {/* embed link to project */}
-                    <h3>Link to Code</h3>
-                    <p>Description</p>
-                </div>
-                <div className="project-container" id="project-three-container">
-                    <h2>Study Buddy</h2> {/* embed link to project */}
-                    <h3>Link to Code</h3>
-                    <p>Description</p>
-                </div>
-                <div className="project-container" id="project-four-container">
-                    <h2>Study Buddy</h2> {/* embed link to project */}
-                    <h3>Link to Code</h3>
-                    <p>Description</p>
-                </div>
-                <div className="project-container" id="project-five-container">
-                    <h2>Study Buddy</h2> {/* embed link to project */}
-                    <h3>Link to Code</h3>
-                    <p>Description</p>
-                </div>
+                {projectArr.map((project, id) => {
+                    return <ProjectElement project={project} id={id} key={`${project.name}${id}`}/>
+                })}
+                <div id="vertical-line"></div>
             </div>
         </>
     )

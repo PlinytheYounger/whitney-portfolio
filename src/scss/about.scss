@@ -1,0 +1,28 @@
+//######################
+// ABOUT 
+//######################
+// main div > 'title'
+// container div > 'about-information'
+// left div bio > 'about-bio'
+// left div icons > 'social-icons'
+
+.about-container {
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    height: 80vh;
+  }
+  
+  
+.social-photo {
+    order: 1;
+    border-bottom: 5px solid #8B5D41;
+    width: 50%;
+    margin-left: 25%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    .bio {
+        line-height: 35px;
+    }
+  }
+  

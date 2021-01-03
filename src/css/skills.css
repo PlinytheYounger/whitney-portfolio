@@ -1,0 +1,35 @@
+/* COLOR PALETTE 
+ADOBE = #8B5D41
+PINE = #555548
+SAGE = #C5C4B2
+PUEBLO = #D2BEB0
+CLAY = #D0C6BC
+SAND = #E8E4E0
+*/
+.resume {
+  margin-left: 5%;
+  order: 2;
+}
+.resume h2 {
+  text-align: center;
+}
+
+.skills-education-resume {
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px solid #8B5D41;
+  width: 80%;
+  padding-bottom: 3%;
+}
+.skills-education-resume #technical-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+span span span {
+  border: 1px single #C5C4B2;
+}
+
+/*# sourceMappingURL=skills.css.map */

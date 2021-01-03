@@ -4,15 +4,28 @@
 // nav
 // #nav-component
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
+
 .header {
     text-align: center;
-    background-color: aqua;
-    height: 10vh;
+    background-color: #D2BEB0;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .name > h1 {
+        font-family: 'Lora', serif;
+    }
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
 }
 
 .nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     flex-wrap: wrap;
     vertical-align: middle;

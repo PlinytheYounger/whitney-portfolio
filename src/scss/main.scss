@@ -1,40 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* COLOR PALETTE 
+ADOBE = #8B5D41
+PINE = #555548
+SAGE = #C5C4B2
+PUEBLO = #D2BEB0
+CLAY = #D0C6BC
+SAND = #E8E4E0
+*/
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+li {
+  list-style: none;
+}
 
 .container {
-    height: 100%;
+  height: 100%;
 }
 
 .main {
-    height: 80vh;
+  background-color: #E8E4E0;
+  color: #555548;
+  padding-bottom: 2.5%;
 }
-
-//######################
-// ABOUT 
-//######################
-// main div > 'title'
-// container div > 'about-information'
-// left div bio > 'about-bio'
-// left div icons > 'social-icons'
-
-
-.about-container {
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-
-//######################
-// PROJECTS
-//######################
-
-// main div > 'projects-container'
-// each project div class > 'project container' id > 'project-NUMBER-container'
-
-
-//######################
-// RESUME
-//######################
-
-//######################
-// CONTACT
-//######################

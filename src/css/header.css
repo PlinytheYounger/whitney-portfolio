@@ -1,27 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 .header {
-  background-color: #D2BEB0;
-  height: 10vh;
-  padding-top: 1%;
-  font-family: 'Lora', serif;
-}
-
-.name {
   text-align: center;
+  background-color: #D2BEB0;
+  height: 15vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header .name > h1 {
+  font-family: "Lora", serif;
+}
+.header .social-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-evenly;
   flex-wrap: wrap;
   vertical-align: middle;
 }
 .nav div a {
   color: black;
   text-decoration: none;
-  color: #555548;
 }
 
 /*# sourceMappingURL=header.css.map */

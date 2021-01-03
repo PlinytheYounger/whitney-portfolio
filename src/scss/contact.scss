@@ -1,0 +1,39 @@
+//######################
+// CONTACT
+//######################
+
+/* COLOR PALETTE 
+ADOBE = #8B5D41
+PINE = #555548
+SAGE = #C5C4B2
+PUEBLO = #D2BEB0
+CLAY = #D0C6BC
+SAND = #E8E4E0
+*/
+
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-me-form {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 2;
+    button {
+        padding: 5px;
+        background-color: #C5C4B2;
+        color: #555548;
+        margin: 2;
+    }
+}
+
+.contact-form-elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+}

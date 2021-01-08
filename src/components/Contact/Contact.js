@@ -12,7 +12,11 @@ class Contact extends React.Component {
                     placeholder: 'Name',
                     name: 'name'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false
             },
     
             email: {
@@ -22,7 +26,11 @@ class Contact extends React.Component {
                     placeholder: 'Email',
                     name: 'email'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false
             },
     
             subject: {
@@ -32,7 +40,11 @@ class Contact extends React.Component {
                     placeholder: 'Subject',
                     name: 'subject'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false
             },
     
             message: {
@@ -42,7 +54,11 @@ class Contact extends React.Component {
                     placeholder: 'Message',
                     name: 'message'
                 },
-                value: ''
+                value: '',
+                validation: {
+                    required: true
+                },
+                valid: false
             }
         }
         
@@ -57,14 +73,30 @@ class Contact extends React.Component {
         const updatedFormElement = {...updatedContactForm[inputIdentifier]}
         // set the state element value to the value of the event target value
         updatedFormElement.value = event.target.value;
-
+        // checking each element is valid using the checkValidity function written below that takes 2 arguments [value of the updated element, validation rules of the updated element]
+        updatedFormElement.valid = this.checkValidity(updatedFormElement.value, updatedFormElement.validation);
         // update the specific element to the updated form element declared
         updatedContactForm[inputIdentifier] = updatedFormElement;
-
+        console.log(updatedFormElement);
         // set state to equal the updated contact form with the new values
         this.setState({
             contactForm: updatedContactForm
         })
+    }
+
+    checkValidity(value, rules) {
+        // add "validation" key to all elements & set required: true or false, depending on the need
+        // add "valid" key to all elements and set to true or false (should be false initially)
+        // set isValid to false, since the form is initially empty
+        let isValid = false;
+        // check to see whether valid is truthy
+        if (rules.required) {
+            // if value is not equal to an empty string return true and set that equal to isValid
+            isValid = value.trim() !== '';
+        }
+        // return true or false to changeHandler function
+
+        return isValid;
     }
 
     submitHandler = (event) => {
@@ -112,11 +144,14 @@ class Contact extends React.Component {
                             <h2>Contact</h2>
                             {formElementsArr.map((object) => {
                                 return(
-                                    <Input elementType={object.config.elementType} 
-                                    elementConfig={object.config.elementConfig} 
-                                    value={object.value} 
-                                    key={object.id} 
-                                    changed={(event) => this.inputChangedHandler(event, object.id)}/>
+                                    <Input 
+                                        elementType={object.config.elementType} 
+                                        elementConfig={object.config.elementConfig} 
+                                        value={object.value} 
+                                        key={object.id} 
+                                        changed={(event) => this.inputChangedHandler(event, object.id)}
+                                        invalid={object.valid}
+                                    />
                                 )
                             })}
                             

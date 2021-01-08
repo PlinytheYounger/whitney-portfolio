@@ -5,6 +5,35 @@
 // main div > 'projects-container'
 // each project div class > 'project container' id > 'project-NUMBER-container'
 
+.title {
+    h1 {
+        text-align: center;
+    }
+}
+
 .projects-container {
-    border-bottom: 5px solid #8B5D41; 
+    border-bottom: 5px solid #8B5D41;
+    display: grid;
+    grid-template-columns: 30% 25% 30%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center; 
+    text-align: center;
+    #project-2-container {
+        grid-column: 3/4;
+        grid-row: 2/3;
+    }
+    #project-1-container {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+}
+
+#vertical-line {
+    background: #8B5D41;
+    width: 2%;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 1/5;
+    justify-self: center;
+    margin-top: 10%;
 }

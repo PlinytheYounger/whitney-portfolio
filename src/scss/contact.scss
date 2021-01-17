@@ -46,3 +46,17 @@ SAND = #E8E4E0
     border: 1px solid red;
     background-color: #FDA49A;
 }
+
+.Button:first-of-type {
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.Button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.Success {
+    background-color: green;
+}

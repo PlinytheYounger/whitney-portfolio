@@ -1,12 +1,13 @@
 import React from 'react';
-import classes from '../../css/contact.css';
+import '../../css/contact.css';
 
 const Input = (props) => {
-    let inputElement = null;
-    const inputClasses = [classes.inputElement];
 
-    if (props.invalid === true) {
-        inputClasses.push(classes.invalid)
+    let inputElement = null;
+    const inputClasses = [];
+
+    if (props.invalid && props.shouldValidate && props.touched) {
+        inputClasses.push("Invalid")
     }
 
     switch ( props.elementType ) {
@@ -38,10 +39,17 @@ const Input = (props) => {
                 />;
     }
 
+    // TODO: add class for error message
+    let validationError = null;
+    if(props.invalid && props.touched) {
+        validationError = <p>Please enter a valid {props.elementConfig.name}</p>
+    }
+
     return (
         <div className="contact-form-elements">
             <label>{inputElement.props.placeholder}</label>
             {inputElement}
+            {validationError}
         </div>
     )
 }

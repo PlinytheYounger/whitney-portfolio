@@ -3,7 +3,7 @@ import '../../css/contact.css';
 import Input from './ContactInputs';
 import Button from './Button';
 import axios from 'axios';
-const BASE_URL = 'https://whitney-lee-smith.herokuapp.com/';
+const BASE_URL = 'https://whitney-lee-smith.herokuapp.com';
 
 
 const Contact = (props) => {

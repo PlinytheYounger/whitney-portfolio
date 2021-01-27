@@ -7,13 +7,13 @@ import '../../css/skills.css';
 const SkillLevel = (props) => {
     let skillLevel = props.skillLevel;
 
-    const makeDivs = () => {
-        let skillArray = [];
-        for(let i = 0; i < skillLevel; i++) {
-            skillArray.push(i);
-        }
-        return skillArray;
-    }
+    // const makeDivs = () => {
+    //     let skillArray = [];
+    //     for(let i = 0; i < skillLevel; i++) {
+    //         skillArray.push(i);
+    //     }
+    //     return skillArray;
+    // }
 
     // let skillsArray = makeDivs();
 

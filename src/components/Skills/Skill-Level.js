@@ -15,17 +15,17 @@ const SkillLevel = (props) => {
         return skillArray;
     }
 
-    let skillsArray = makeDivs();
+    // let skillsArray = makeDivs();
 
     // return div with # of circles corresponding to rating #
     return(
         <div className="skill-level-container">
-            {skillsArray.map((num) => {
+            {/* {skillsArray.map((num) => {
                 return(
                     <div className="skill-level-div" key={`${num}`}></div>
                 )
             })
-            }
+            } */}
         </div>
     )
 }

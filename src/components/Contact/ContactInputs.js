@@ -3,8 +3,10 @@ import '../../css/contact.css';
 
 const Input = (props) => {
 
+
     let inputElement = null;
-    const inputClasses = [];
+    const inputClasses = ['inputElement'];
+    let label = props.elementConfig.name.charAt(0).toUpperCase() + props.elementConfig.name.slice(1);
 
     if (props.invalid && props.shouldValidate && props.touched) {
         inputClasses.push("Invalid")
@@ -17,7 +19,7 @@ const Input = (props) => {
                     {...props.elementConfig} 
                     value={props.value} 
                     onChange={props.changed}
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(', ')}
                 />;
             break;
         case ('textarea'):
@@ -47,11 +49,11 @@ const Input = (props) => {
 
     return (
         <div className="contact-form-elements">
-            <label>{inputElement.props.placeholder}</label>
+            <label>{label}</label>
             {inputElement}
             {validationError}
         </div>
     )
-}
+};
 
 export default Input;

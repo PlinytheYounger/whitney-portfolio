@@ -5,6 +5,7 @@ SAGE = #C5C4B2
 PUEBLO = #D2BEB0
 CLAY = #D0C6BC
 SAND = #E8E4E0
+RUST: = #A13D2D
 */
 .contact-me-container {
   display: flex;
@@ -17,24 +18,26 @@ SAND = #E8E4E0
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  margin: 2;
+  margin: 20px 20px 40px 20px;
 }
-.contact-me-form button {
-  padding: 5px;
-  background-color: #C5C4B2;
-  color: #555548;
-  margin: 2;
-}
-
-.contact-form-elements {
+.contact-me-form .contact-form-elements {
+  width: 25%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 5px;
 }
-
-.inputElement {
+.contact-me-form .contact-form-elements label {
+  margin-bottom: 5px;
+}
+.contact-me-form .contact-form-elements .inputElement {
+  width: 100%;
   padding: 5px;
+  margin-bottom: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+.contact-me-form .contact-form-elements .inputElement > input[type=textarea] {
+  padding: 20px;
 }
 
 .Invalid {
@@ -42,18 +45,18 @@ SAND = #E8E4E0
   background-color: #FDA49A;
 }
 
-.Button:first-of-type {
-  margin-left: 0;
-  padding-left: 0;
+.button {
+  padding: 5px 10px 10px 5px;
+  background-color: #D2BEB0;
+  color: #A13D2D;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
 }
 
-.Button:disabled {
+.button:disabled {
   background-color: #ccc;
+  color: white;
   cursor: not-allowed;
-}
-
-.Success {
-  background-color: green;
 }
 
 /*# sourceMappingURL=contact.css.map */

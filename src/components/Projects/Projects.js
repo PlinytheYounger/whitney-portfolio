@@ -34,6 +34,7 @@ const Projects = () => {
                 })}
                 <div id="vertical-line"></div>
             </div>
+            <div id="bottom-border-projects"></div>
         </>
     )
 }

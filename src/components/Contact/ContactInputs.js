@@ -1,12 +1,15 @@
 import React from 'react';
-import classes from '../../css/contact.css';
+import '../../css/contact.css';
 
 const Input = (props) => {
-    let inputElement = null;
-    const inputClasses = [classes.inputElement];
 
-    if (props.invalid === true) {
-        inputClasses.push(classes.invalid)
+
+    let inputElement = null;
+    const inputClasses = ['inputElement'];
+    let label = props.elementConfig.name.charAt(0).toUpperCase() + props.elementConfig.name.slice(1);
+
+    if (props.invalid && props.shouldValidate && props.touched) {
+        inputClasses.push("Invalid")
     }
 
     switch ( props.elementType ) {
@@ -16,7 +19,7 @@ const Input = (props) => {
                     {...props.elementConfig} 
                     value={props.value} 
                     onChange={props.changed}
-                    className={inputClasses.join(' ')}
+                    className={inputClasses.join(', ')}
                 />;
             break;
         case ('textarea'):
@@ -38,12 +41,19 @@ const Input = (props) => {
                 />;
     }
 
+    // TODO: add class for error message
+    let validationError = null;
+    if(props.invalid && props.touched) {
+        validationError = <p>Please enter a valid {props.elementConfig.name}</p>
+    }
+
     return (
         <div className="contact-form-elements">
-            <label>{inputElement.props.placeholder}</label>
+            <label>{label}</label>
             {inputElement}
+            {validationError}
         </div>
     )
-}
+};
 
 export default Input;

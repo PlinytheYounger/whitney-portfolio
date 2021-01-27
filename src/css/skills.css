@@ -6,30 +6,35 @@ PUEBLO = #D2BEB0
 CLAY = #D0C6BC
 SAND = #E8E4E0
 */
-.resume {
-  margin-left: 5%;
-  order: 2;
-}
-.resume h2 {
+h1 {
   text-align: center;
 }
 
 .skills-education-resume {
   line-height: 30px;
   display: flex;
-  justify-content: space-between;
-  border-bottom: 5px solid #8B5D41;
-  width: 80%;
+  justify-content: space-around;
   padding-bottom: 3%;
 }
-.skills-education-resume #technical-skills {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
+#bottom-border-skills {
+  width: 53%;
+  height: 5px;
+  margin-left: 20%;
+  background: #8B5D41;
 }
 
-span span span {
-  border: 1px single #C5C4B2;
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.skills-container .skill-level-container .skill-level-div {
+  margin-left: 50%;
+  width: 20px;
+  height: 20px;
+  background: #8B5D41;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=skills.css.map */

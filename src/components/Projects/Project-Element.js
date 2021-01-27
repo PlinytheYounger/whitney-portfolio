@@ -2,7 +2,6 @@ import React from 'react';
 import '../../css/projects.css';
 
 const ProjectElement = (props) => {
-    console.log(props)
     const { name, gitHubUrl, description, photoUrl } = props.project;
 
     return(

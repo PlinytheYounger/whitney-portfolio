@@ -12,7 +12,6 @@
 }
 
 .projects-container {
-    border-bottom: 5px solid #8B5D41;
     display: grid;
     grid-template-columns: 30% 25% 30%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -30,10 +29,17 @@
 
 #vertical-line {
     background: #8B5D41;
-    width: 2%;
-    height: 90%;
+    width: 1.5%;
+    height: 80%;
     grid-column: 2/3;
     grid-row: 1/5;
     justify-self: center;
     margin-top: 10%;
 }
+
+#bottom-border-projects {
+    width: 51%;
+    height: 5px;
+    margin-left: 24%;
+    background: #8B5D41;
+  }

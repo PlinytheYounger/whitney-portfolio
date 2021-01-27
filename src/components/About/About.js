@@ -16,6 +16,7 @@ const About = () => {
                         <img src={Photo} alt="Whitney hiking in Vermont"></img>
                     </div>
                 </div>
+                <div id="bottom-border-about"></div>
             </div>
         </>
     )

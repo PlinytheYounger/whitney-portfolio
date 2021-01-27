@@ -5,7 +5,7 @@ import '../../css/skills.css';
 
 // create functional component
 const SkillLevel = (props) => {
-    let skillLevel = props.skillLevel;
+    // let skillLevel = props.skillLevel;
 
     // const makeDivs = () => {
     //     let skillArray = [];

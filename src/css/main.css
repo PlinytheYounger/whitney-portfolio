@@ -9,6 +9,8 @@ SAND = #E8E4E0
 */
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box-sizing;
 }
 
 li {
@@ -22,7 +24,29 @@ li {
 .main {
   background-color: #E8E4E0;
   color: #555548;
-  padding-bottom: 2.5%;
+}
+.main .main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 50vh;
+}
+
+#bottom-border {
+  width: 70%;
+  height: 5px;
+  margin-left: 15%;
+  background: #8B5D41;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.node {
+  background-color: yellow;
+  align-items: center;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

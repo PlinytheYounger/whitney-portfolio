@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/skills.css';
 import SkillElement from './Skill-Element';
+import Button from 'react-bootstrap/Button';
 
 const Skills = () => {
 
@@ -86,42 +87,68 @@ const Skills = () => {
         }
     ];
 
+    let idNameFront = 'hide';
+    let idNameBack = 'hide';
+    let idNameBusiness = 'hide';
+
+    const toggleCard = (event) => {
+        if(event.target.id === "front-end-button") {
+            idNameFront = "show";
+            idNameBack = "hide";
+            idNameBusiness = "hide"; 
+        } else if(event.target.id === "back-end-button") {
+            idNameFront = "hide";
+            idNameBack = "show";
+            idNameBusiness = "hide";
+        } else if(event.target.id === "business-end-button") {
+            idNameFront = "hide";
+            idNameBack = "hide";
+            idNameBusiness = "show";
+        }
+    }
 
     /****************************
      * RETURN
      *****************************/
 
     return(
-        <div className="resume" id="skills">
+        <div className="skills-container" id="skills">
             <h1>Skills</h1>
             <div className="skills-education-resume">
-                <div id="front-end-skills">
+                <div className="buttons">
+                    <Button onClick={toggleCard} id="front-end-button" className="button">front-end</Button>
+                    <Button onClick={toggleCard} id="back-end-button" className="button">back-end</Button>
+                    <Button onClick={toggleCard} id="business-button" className="button">business</Button>
+                </div>
+                
+                <div>
+                    <div className="card" id={`${idNameFront}`}>
                         {techSkillsFront.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 
                             )
                                             
                         })}
-                </div>
-
-                <div id="back-end-skills">
+                    </div>
+                    
+                    
+                    <div className="card" id={`${idNameBack}`} >
                         {techSkillsBack.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} />   
                             )
                         })}
-                </div>
-
-                <div id="other-skills">
+                    </div>
+                    
+                    <div className="card" id={`${idNameBusiness}`}>
                         {otherSkills.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 
                             )
                         })}
+                    </div>
                 </div>
-                            
             </div>
-            <div id="bottom-border-skills"></div>
         </div>
     )
 }

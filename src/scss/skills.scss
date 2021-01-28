@@ -7,37 +7,41 @@ CLAY = #D0C6BC
 SAND = #E8E4E0
 */
 
-h1 {
-    text-align: center;
-}
-
-.skills-education-resume {
-    line-height: 30px;
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 3%;
-}
-
-#bottom-border-skills {
-  width: 53%;
-  height: 5px;
-  margin-left: 20%;
-  background: #8B5D41;
-}
 
 .skills-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .skill-level-container {
-    .skill-level-div {
-      margin-left: 50%;
-      width: 20px;
-      height: 20px;
-      background: #8B5D41;
-      border-radius: 50%;
-    }
+  h1 {
+      text-align: center;
   }
-
+  width: 45%;
+  .skills-education-resume {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .buttons {
+        display: flex;
+        justify-content: space-around;
+        .button {
+          border-radius: 5%;
+        }
+      }
+  }
 }
+
+
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#hide {
+  color: purple;
+}
+
+#show {
+  color: orange;
+}
+
+
 

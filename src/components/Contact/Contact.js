@@ -3,6 +3,10 @@ import '../../css/contact.css';
 import Input from './ContactInputs';
 import Button from './Button';
 import axios from 'axios';
+import Form from 'react-bootstrap/Form';
+
+
+
 const BASE_URL = 'https://whitney-lee-smith.herokuapp.com';
 
 
@@ -70,11 +74,20 @@ const Contact = (props) => {
         formIsValid: false,
     });
 
-    const [ resultState, setResultState ] = useState()
+    const [ resultState, setResultState ] = useState();
+
+    let axiosConfig = {
+        headers: {
+            'Content-Type': 'application/json;charset=UTF-8',
+            "Access-Control-Allow-Origin": "*",
+            "Accept": "application/json"
+        }
+      };
 
     const sendForm = () => {
         axios
-         .post(BASE_URL + '/send', { ...formState })
+         .post(BASE_URL + '/send', { ...formState }, axiosConfig)
+         // add headers to update response for CORS policy
          .then(response => {
             setResultState(response.data);
             setFormState({ 
@@ -292,7 +305,7 @@ const Contact = (props) => {
                             {resultState.message}
                         </p>
                     )}
-                    <form className="contact-me-form" onSubmit={submitHandler} >
+                    <Form onSubmit={submitHandler} className="contact-me-form">
                         <h2>Contact</h2>
                         {formElementsArr.map((object) => {
                             return(
@@ -310,8 +323,7 @@ const Contact = (props) => {
                         })}
                         
                         <Button clicked={submitHandler} btnType="Success" disabled={!formState.formIsValid} />
-                    </form>
-                    <div id="bottom-border"></div>
+                    </Form>
                 </div>
             </>
         )};

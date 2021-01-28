@@ -1,11 +1,14 @@
 import React from 'react';
+import Form from 'react-bootstrap/Form';
 import '../../css/contact.css';
 
+
 const Input = (props) => {
-
-
+    
     let inputElement = null;
     const inputClasses = ['inputElement'];
+    
+    // create dynamic label based on name (no placeholder)
     let label = props.elementConfig.name.charAt(0).toUpperCase() + props.elementConfig.name.slice(1);
 
     if (props.invalid && props.shouldValidate && props.touched) {
@@ -15,8 +18,9 @@ const Input = (props) => {
     switch ( props.elementType ) {
         case ('input'):
             inputElement = 
-                <input 
+                <Form.Control 
                     {...props.elementConfig} 
+                    type={props.elementConfig.type}
                     value={props.value} 
                     onChange={props.changed}
                     className={inputClasses.join(', ')}
@@ -24,7 +28,7 @@ const Input = (props) => {
             break;
         case ('textarea'):
             inputElement = 
-                <input 
+                <Form.Control 
                     {...props.elementConfig} 
                     value={props.value} 
                     onChange={props.changed}
@@ -33,7 +37,7 @@ const Input = (props) => {
             break;
         default:
             inputElement = 
-                <input 
+                <Form.Control
                     {...props.elementConfig} 
                     value={props.value} 
                     onChange={props.changed}
@@ -48,11 +52,11 @@ const Input = (props) => {
     }
 
     return (
-        <div className="contact-form-elements">
-            <label>{label}</label>
+        <Form.Group controlId={`formBasic${inputElement.name}`}>
+            <Form.Label>{label}</Form.Label>
             {inputElement}
             {validationError}
-        </div>
+        </Form.Group>
     )
 };
 

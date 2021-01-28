@@ -11,10 +11,14 @@ const Container = () => {
     return (
         <div className="main">
             <Header />
+            <div className="main-container">
+                <Skills />
+                <Projects />
+            </div>
+            <div id="bottom-border"></div> 
             <About />
-            <Skills />
-            <Projects /> 
             <Contact />
+            <div id="bottom-border"></div>
             <Footer />
         </div>
     )

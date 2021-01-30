@@ -147,10 +147,9 @@ const Skills = () => {
 
     return(
         <div className="skills-container" id="skills">
-            <h1>Skills</h1>
+            <h2>Skills</h2>
             <div className="skills-education-resume">
-                <div className="buttons">
-                    <div>
+                <div className="shell front-end-shell">
                     <button onClick={toggleCard} id="front-end-button" className="button">front-end</button>
                     <div className="card" id={`${getState.idNameFront}`}>
                         {techSkillsFront.map((skill, id) => {
@@ -160,14 +159,10 @@ const Skills = () => {
                                             
                         })}
                     </div>
-                    </div>
-                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
-                    <button onClick={toggleCard} id="business-button" className="button">business</button>
                 </div>
-                
-                <div>
-                    
-                    
+
+                <div className="shell back-end-shell">
+                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
                     <div className="card" id={`${getState.idNameBack}`} >
                         {techSkillsBack.map((skill, id) => {
                             return (
@@ -175,7 +170,11 @@ const Skills = () => {
                             )
                         })}
                     </div>
-                    
+                </div>
+
+
+                <div className="shell business-shell">
+                    <button onClick={toggleCard} id="business-button" className="button">business</button>
                     <div className="card" id={`${getState.idNameBusiness}`}>
                         {otherSkills.map((skill, id) => {
                             return (
@@ -183,7 +182,8 @@ const Skills = () => {
                             )
                         })}
                     </div>
-                </div>
+                </div>                
+
             </div>
         </div>
     )

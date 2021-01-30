@@ -1,7 +1,15 @@
 .footer {
     text-align: center;
     background-color: #D2BEB0;
-    padding-top: 0.25%;
+    padding-top: 5%;
     padding-bottom: 0.5%;
     color: #555548;
+    margin-top: 8%;
+}
+
+.social-icons {
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }

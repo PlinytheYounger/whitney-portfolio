@@ -7,12 +7,6 @@ PUEBLO = #D2BEB0
 CLAY = #D0C6BC
 SAND = #E8E4E0
 */
-body {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 h1, h2, h3, h4 {
   font-family: "Montserrat", sans-serif;
 }
@@ -21,24 +15,22 @@ li {
   list-style: none;
 }
 
-.container {
-  height: 100%;
-}
-
 .main {
   background-color: #E8E4E0;
   color: #555548;
-  text-align: center;
+}
+.main .content {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
 #bottom-border {
   width: 70%;
   height: 5px;
-  margin-left: 15%;
   background: #8B5D41;
-  margin-bottom: 5%;
-  margin-top: 5%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 
 /*# sourceMappingURL=main.css.map */

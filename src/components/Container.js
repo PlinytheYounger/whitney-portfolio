@@ -11,14 +11,16 @@ const Container = () => {
     return (
         <div className="main">
             <Header />
-            <About />
-            <div id="bottom-border"></div>
-            <Projects />
-            <div id="bottom-border"></div>
-            <Skills />
-            <div id="bottom-border"></div> 
-            <Contact />
-            <div id="bottom-border"></div>
+            <div className="content">
+                <About />
+                <div id="bottom-border"></div>
+                <Projects />
+                <div id="bottom-border"></div>
+                <Skills />
+                <div id="bottom-border"></div> 
+                <Contact />
+
+            </div>
             <Footer />
         </div>
     )

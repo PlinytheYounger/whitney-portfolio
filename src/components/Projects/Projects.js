@@ -31,7 +31,7 @@ const Projects = () => {
     return(
         <div className="projects-main">
             <div className="title" id="projects">
-                <h1>Projects</h1>
+                <h2>Recent Projects</h2>
             </div>
             <Accordion className="projects-container">
                 {projectArr.map((project, id) => {

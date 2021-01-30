@@ -7,9 +7,6 @@ const Header = () => {
         <div className="header">
             <div className="nav">
                 <div>
-                    <HashLink smooth to="/about#about-container">About</HashLink>
-                </div>
-                <div>
                     <HashLink smooth to="/skills#skills">Skills</HashLink>
                 </div>
                 <div>
@@ -23,9 +20,10 @@ const Header = () => {
                 <h1>Whitney Smith</h1>
                 <h2>Software Developer</h2>
             </div>
-            <div className="social-icons">
+            <div className="nav">
                     <p>Github</p>
                     <p>LinkedIn</p>
+                    <p>Email</p>
             </div>
         </div>
     )

@@ -8,36 +8,26 @@ SAND = #E8E4E0
 */
 .skills-container {
   width: 70%;
-  margin-left: 15%;
   text-align: center;
+  height: 35vh;
 }
-.skills-container h1 {
+.skills-container h2 {
   text-align: center;
+  padding-bottom: 3%;
 }
 .skills-container .skills-education-resume {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-around;
 }
-.skills-container .skills-education-resume .buttons {
-  display: flex;
-  justify-content: space-around;
-}
-.skills-container .skills-education-resume .buttons .button {
+.skills-container .skills-education-resume .button {
   border-radius: 5%;
 }
 .skills-container .skills-education-resume .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: brown;
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: brown;
+  margin-top: 20%;
 }
 
 .skills {

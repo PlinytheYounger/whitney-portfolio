@@ -16,6 +16,10 @@ body {
   box-sizing: border-box-sizing;
 }
 
+h1, h2, h3, h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+
 li {
   list-style: none;
 }
@@ -27,13 +31,6 @@ li {
 .main {
   background-color: #E8E4E0;
   color: #555548;
-  .main-container {
-    display: flex; 
-    flex-direction: row;
-    justify-content: space-evenly;
-    // margin-top: 5%;
-    height: 50vh;
-  }
 }
 
 #bottom-border {
@@ -43,12 +40,4 @@ li {
   background: #8B5D41;
   margin-bottom: 5%;
   margin-top: 5%;
-}
-
-.node {
-  background-color: yellow;
-  align-items: center;
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
 }

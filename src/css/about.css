@@ -1,15 +1,16 @@
 .about-container {
   text-align: center;
   padding-top: 2%;
-  height: 73vh;
+  height: 100%;
+  width: 100%;
 }
 
 .social-photo {
   order: 1;
-  width: 50%;
   margin-left: 25%;
   padding-top: 2%;
   padding-bottom: 2%;
+  width: 50%;
 }
 .social-photo .bio {
   line-height: 35px;

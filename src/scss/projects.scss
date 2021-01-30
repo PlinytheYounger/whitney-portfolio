@@ -15,14 +15,19 @@
 .projects-main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 45%;
+}
+
+.projects-container {
+    width: 100%;
 }
 
 .accordion-toggle {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .accordion-collapse {

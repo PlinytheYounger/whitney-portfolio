@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../css/skills.css';
 import SkillElement from './Skill-Element';
-import Button from 'react-bootstrap/Button';
+import {useState} from 'react';
 
 const Skills = () => {
 
@@ -87,25 +87,59 @@ const Skills = () => {
         }
     ];
 
-    let idNameFront = 'hide';
-    let idNameBack = 'hide';
-    let idNameBusiness = 'hide';
+    const [getState, setState] = useState({
+        idNameFront: 'hide',
+        idNameBack: 'hide',
+        idNameBusiness: 'hide'
+    })
 
     const toggleCard = (event) => {
+        // add functionality to setState to 'hide' if the user clicks the button again (i.e. clicks when state is set to 'show' for that div)
         if(event.target.id === "front-end-button") {
-            idNameFront = "show";
-            idNameBack = "hide";
-            idNameBusiness = "hide"; 
+            if(getState.idNameFront === 'hide'){
+                setState({
+                idNameFront: 'show',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide',
+            })
+        } else {
+            setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide',
+            })
+        } 
         } else if(event.target.id === "back-end-button") {
-            idNameFront = "hide";
-            idNameBack = "show";
-            idNameBusiness = "hide";
-        } else if(event.target.id === "business-end-button") {
-            idNameFront = "hide";
-            idNameBack = "hide";
-            idNameBusiness = "show";
+            if(getState.idNameBack === 'hide'){
+                setState({
+                idNameFront: 'hide',
+                idNameBack: 'show',
+                idNameBusiness: 'hide'
+            }) 
+        } else {
+            setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide'
+            })
         }
+        } else if(event.target.id === "business-button") {
+            if(getState.idNameBusiness === 'hide') {setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'show',
+                
+            }) 
+            } else {
+                setState({
+                    idNameFront: 'hide',
+                    idNameBack: 'hide',
+                    idNameBusiness: 'hide',
+                })
+            }
+        } 
     }
+
 
     /****************************
      * RETURN
@@ -116,13 +150,13 @@ const Skills = () => {
             <h1>Skills</h1>
             <div className="skills-education-resume">
                 <div className="buttons">
-                    <Button onClick={toggleCard} id="front-end-button" className="button">front-end</Button>
-                    <Button onClick={toggleCard} id="back-end-button" className="button">back-end</Button>
-                    <Button onClick={toggleCard} id="business-button" className="button">business</Button>
+                    <button onClick={toggleCard} id="front-end-button" className="button">front-end</button>
+                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
+                    <button onClick={toggleCard} id="business-button" className="button">business</button>
                 </div>
                 
                 <div>
-                    <div className="card" id={`${idNameFront}`}>
+                    <div className="card" id={`${getState.idNameFront}`}>
                         {techSkillsFront.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 
@@ -132,7 +166,7 @@ const Skills = () => {
                     </div>
                     
                     
-                    <div className="card" id={`${idNameBack}`} >
+                    <div className="card" id={`${getState.idNameBack}`} >
                         {techSkillsBack.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} />   
@@ -140,7 +174,7 @@ const Skills = () => {
                         })}
                     </div>
                     
-                    <div className="card" id={`${idNameBusiness}`}>
+                    <div className="card" id={`${getState.idNameBusiness}`}>
                         {otherSkills.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 

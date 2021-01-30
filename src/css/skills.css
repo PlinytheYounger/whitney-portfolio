@@ -7,7 +7,7 @@ CLAY = #D0C6BC
 SAND = #E8E4E0
 */
 .skills-container {
-  width: 45%;
+  text-align: center;
 }
 .skills-container h1 {
   text-align: center;
@@ -29,14 +29,21 @@ SAND = #E8E4E0
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: brown;
+}
+
+.skills {
+  background-color: #C5C4B2;
+  color: #8B5D41;
 }
 
 #hide {
-  color: purple;
+  display: none;
 }
 
 #show {
-  color: orange;
+  display: block;
+  background-color: #C5C4B2;
 }
 
 /*# sourceMappingURL=skills.css.map */

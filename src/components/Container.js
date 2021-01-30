@@ -11,12 +11,12 @@ const Container = () => {
     return (
         <div className="main">
             <Header />
-            <div className="main-container">
-                <Skills />
-                <Projects />
-            </div>
-            <div id="bottom-border"></div> 
             <About />
+            <div id="bottom-border"></div>
+            <Projects />
+            <div id="bottom-border"></div>
+            <Skills />
+            <div id="bottom-border"></div> 
             <Contact />
             <div id="bottom-border"></div>
             <Footer />

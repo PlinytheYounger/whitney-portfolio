@@ -4,6 +4,13 @@
   padding-top: 0.25%;
   padding-bottom: 0.5%;
   color: #555548;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*# sourceMappingURL=footer.css.map */

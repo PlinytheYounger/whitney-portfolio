@@ -9,6 +9,12 @@ SAND = #E8E4E0
 */
 body {
   font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box-sizing;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Montserrat", sans-serif;
 }
 
 li {
@@ -22,7 +28,15 @@ li {
 .main {
   background-color: #E8E4E0;
   color: #555548;
-  padding-bottom: 2.5%;
+}
+
+#bottom-border {
+  width: 70%;
+  height: 5px;
+  margin-left: 15%;
+  background: #8B5D41;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 /*# sourceMappingURL=main.css.map */

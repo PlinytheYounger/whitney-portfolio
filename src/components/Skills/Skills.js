@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/skills.css';
 import SkillElement from './Skill-Element';
+import {useState} from 'react';
 
 const Skills = () => {
 
@@ -86,42 +87,102 @@ const Skills = () => {
         }
     ];
 
+    const [getState, setState] = useState({
+        idNameFront: 'hide',
+        idNameBack: 'hide',
+        idNameBusiness: 'hide'
+    })
+
+    const toggleCard = (event) => {
+        // add functionality to setState to 'hide' if the user clicks the button again (i.e. clicks when state is set to 'show' for that div)
+        if(event.target.id === "front-end-button") {
+            if(getState.idNameFront === 'hide'){
+                setState({
+                idNameFront: 'show',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide',
+            })
+        } else {
+            setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide',
+            })
+        } 
+        } else if(event.target.id === "back-end-button") {
+            if(getState.idNameBack === 'hide'){
+                setState({
+                idNameFront: 'hide',
+                idNameBack: 'show',
+                idNameBusiness: 'hide'
+            }) 
+        } else {
+            setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'hide'
+            })
+        }
+        } else if(event.target.id === "business-button") {
+            if(getState.idNameBusiness === 'hide') {setState({
+                idNameFront: 'hide',
+                idNameBack: 'hide',
+                idNameBusiness: 'show',
+                
+            }) 
+            } else {
+                setState({
+                    idNameFront: 'hide',
+                    idNameBack: 'hide',
+                    idNameBusiness: 'hide',
+                })
+            }
+        } 
+    }
+
 
     /****************************
      * RETURN
      *****************************/
 
     return(
-        <div className="resume" id="skills">
+        <div className="skills-container" id="skills">
             <h1>Skills</h1>
             <div className="skills-education-resume">
-                <div id="front-end-skills">
+                <div className="buttons">
+                    <button onClick={toggleCard} id="front-end-button" className="button">front-end</button>
+                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
+                    <button onClick={toggleCard} id="business-button" className="button">business</button>
+                </div>
+                
+                <div>
+                    <div className="card" id={`${getState.idNameFront}`}>
                         {techSkillsFront.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 
                             )
                                             
                         })}
-                </div>
-
-                <div id="back-end-skills">
+                    </div>
+                    
+                    
+                    <div className="card" id={`${getState.idNameBack}`} >
                         {techSkillsBack.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} />   
                             )
                         })}
-                </div>
-
-                <div id="other-skills">
+                    </div>
+                    
+                    <div className="card" id={`${getState.idNameBusiness}`}>
                         {otherSkills.map((skill, id) => {
                             return (
                                 <SkillElement key={id} name={skill.name} skillLevel={skill.skillLevel} /> 
                             )
                         })}
+                    </div>
                 </div>
-                            
             </div>
-            <div id="bottom-border-skills"></div>
         </div>
     )
 }

@@ -150,12 +150,8 @@ const Skills = () => {
             <h1>Skills</h1>
             <div className="skills-education-resume">
                 <div className="buttons">
+                    <div>
                     <button onClick={toggleCard} id="front-end-button" className="button">front-end</button>
-                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
-                    <button onClick={toggleCard} id="business-button" className="button">business</button>
-                </div>
-                
-                <div>
                     <div className="card" id={`${getState.idNameFront}`}>
                         {techSkillsFront.map((skill, id) => {
                             return (
@@ -164,6 +160,12 @@ const Skills = () => {
                                             
                         })}
                     </div>
+                    </div>
+                    <button onClick={toggleCard} id="back-end-button" className="button">back-end</button>
+                    <button onClick={toggleCard} id="business-button" className="button">business</button>
+                </div>
+                
+                <div>
                     
                     
                     <div className="card" id={`${getState.idNameBack}`} >

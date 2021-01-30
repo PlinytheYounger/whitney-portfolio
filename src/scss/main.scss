@@ -12,8 +12,8 @@ SAND = #E8E4E0
 
 body {
   font-family: 'Montserrat', sans-serif;
-  margin: 0 auto;
-  box-sizing: border-box-sizing;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, h4 {
@@ -31,6 +31,8 @@ li {
 .main {
   background-color: #E8E4E0;
   color: #555548;
+  text-align: center;
+  align-items: center;
 }
 
 #bottom-border {

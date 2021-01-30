@@ -8,10 +8,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .projects-container {
   width: 100%;
+  background-color: #C5C4B2;
 }
 
 .accordion-toggle {

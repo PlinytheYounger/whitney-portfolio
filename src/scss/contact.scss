@@ -12,17 +12,18 @@ SAND = #E8E4E0
 RUST: = #A13D2D
 */
 
-.contact-me-container {
+#contact-me-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100%;
-    margin-bottom: 100%;
-    h2 {
-        a {
-            color: #8B5D41;
-            text-decoration: none;
-        }
+    margin-top: 5%;
+    a {
+        color: #8B5D41;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #555548;
+        font-style: italic;
     }
 }
 

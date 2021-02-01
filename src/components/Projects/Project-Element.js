@@ -1,28 +1,23 @@
 import React from 'react';
 import '../../css/projects.css';
-import Accordion from 'react-bootstrap/Accordion';
-import Card from 'react-bootstrap/Card';
 
 const ProjectElement = (props) => {
     const { name, gitHubUrl, description, photoUrl } = props.project;
-
-    let updatedId = props.id;
-    let newId = updatedId + 1;
-
+    console.log(props.id)
 
     return(
-        <Card className="project-container">
-            <Accordion.Toggle as={Card.Header} eventKey={newId} className="accordion-toggle">
-                {name}
-            </Accordion.Toggle> {/* embed link to project */}
-            <Accordion.Collapse eventKey={newId} className="accordion-collapse">
+        <div className="project-container" id={`container${props.id}`}>
+            <div className="project-card" id={`card${props.id}`}>
+                <img src={photoUrl} alt={`${name} website`} />
+            </div> 
+            <div className="project-info" id={`info${props.id}`}>
                 <div>
-                    <img src={photoUrl} alt={`${name} website`} />
+                    <h4>{name}</h4> {/* embed link to project */}
                     <a href={gitHubUrl}>See My Code</a>
                     <p>{description}</p>                    
                 </div>
-            </Accordion.Collapse>
-        </Card>
+            </div>
+        </div>
     )
 }
 

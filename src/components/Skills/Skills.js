@@ -90,7 +90,8 @@ const Skills = () => {
     const [getState, setState] = useState({
         idNameFront: 'hide',
         idNameBack: 'hide',
-        idNameBusiness: 'hide'
+        idNameBusiness: 'hide',
+        height: ''
     })
 
     const toggleCard = (event) => {
@@ -101,12 +102,14 @@ const Skills = () => {
                 idNameFront: 'show',
                 idNameBack: 'hide',
                 idNameBusiness: 'hide',
+                height: 'changeHeight'
             })
         } else {
             setState({
                 idNameFront: 'hide',
                 idNameBack: 'hide',
                 idNameBusiness: 'hide',
+                height: ''
             })
         } 
         } else if(event.target.id === "back-end-button") {
@@ -114,13 +117,15 @@ const Skills = () => {
                 setState({
                 idNameFront: 'hide',
                 idNameBack: 'show',
-                idNameBusiness: 'hide'
+                idNameBusiness: 'hide',
+                height: 'changeHeight'
             }) 
         } else {
             setState({
                 idNameFront: 'hide',
                 idNameBack: 'hide',
-                idNameBusiness: 'hide'
+                idNameBusiness: 'hide',
+                height: ''
             })
         }
         } else if(event.target.id === "business-button") {
@@ -128,6 +133,7 @@ const Skills = () => {
                 idNameFront: 'hide',
                 idNameBack: 'hide',
                 idNameBusiness: 'show',
+                height: 'changeHeight'
                 
             }) 
             } else {
@@ -135,6 +141,7 @@ const Skills = () => {
                     idNameFront: 'hide',
                     idNameBack: 'hide',
                     idNameBusiness: 'hide',
+                    height: ''
                 })
             }
         } 
@@ -146,7 +153,7 @@ const Skills = () => {
      *****************************/
 
     return(
-        <div className="skills-container" id="skills">
+        <div className="skills-container" id={`skills ${getState.height}`}>
             <h2>Skills</h2>
             <div className="skills-education-resume">
                 <div className="shell front-end-shell">

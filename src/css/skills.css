@@ -9,7 +9,8 @@ SAND = #E8E4E0
 .skills-container {
   width: 70%;
   text-align: center;
-  height: 35vh;
+  height: 55vh;
+  padding-top: 2%;
 }
 .skills-container h2 {
   text-align: center;
@@ -20,14 +21,20 @@ SAND = #E8E4E0
   flex-direction: row;
   justify-content: space-around;
 }
-.skills-container .skills-education-resume .button {
-  border-radius: 5%;
+.skills-container .skills-education-resume .shell {
+  align-items: center;
 }
-.skills-container .skills-education-resume .card {
+.skills-container .skills-education-resume .shell .button {
+  border-radius: 5%;
+  background-color: #C5C4B2;
+  color: #8B5D41;
+}
+.skills-container .skills-education-resume .shell .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 30%;
+  width: 100%;
 }
 
 .skills {
@@ -42,6 +49,10 @@ SAND = #E8E4E0
 #show {
   display: block;
   background-color: #C5C4B2;
+}
+
+#changeHeight {
+  height: 45vh;
 }
 
 /*# sourceMappingURL=skills.css.map */

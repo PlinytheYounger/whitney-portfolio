@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../css/projects.css';
 import ProjectElement from './Project-Element';
-import Accordion from 'react-bootstrap/Accordion';
 import image1 from '../../images/photo1.jpeg';
 import image2 from '../../images/photo2.jpeg';
 import image3 from '../../images/photo3.jpeg';
@@ -30,15 +29,13 @@ const Projects = () => {
     ]
     return(
         <div className="projects-main">
-            <div className="title" id="projects">
-                <h2>Recent Projects</h2>
-            </div>
-            <Accordion className="projects-container">
+            <h2>Recent Projects</h2>
+            <div className="projects-container">
                 {projectArr.map((project, id) => {
                     return <ProjectElement project={project} id={id} key={`${project.name}${id}`}/>
                 })}
 
-            </Accordion>
+            </div>
         </div>
     )
 }

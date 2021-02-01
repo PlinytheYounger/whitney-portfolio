@@ -11,7 +11,8 @@ SAND = #E8E4E0
 .skills-container {
   width: 70%;
   text-align: center;
-  height: 35vh; 
+  height: 55vh;
+  padding-top: 2%;
   h2 {
       text-align: center;
       padding-bottom: 3%;
@@ -20,14 +21,20 @@ SAND = #E8E4E0
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      .button {
-          border-radius: 5%;
-        }
-      .card {
-        display: flex;
-        flex-direction: column;
+      .shell {
         align-items: center;
-        margin-top: 20%;
+        .button {
+            border-radius: 5%;
+            background-color: #C5C4B2;
+            color: #8B5D41;
+          }
+        .card {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30%;
+          width: 100%;
+        }
       }
   }
 }
@@ -46,6 +53,9 @@ SAND = #E8E4E0
   background-color: #C5C4B2;
 }
 
+#changeHeight {
+  height: 45vh;
+}
 
 
 

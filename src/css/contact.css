@@ -7,16 +7,19 @@ CLAY = #D0C6BC
 SAND = #E8E4E0
 RUST: = #A13D2D
 */
-.contact-me-container {
+#contact-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100%;
-  margin-bottom: 100%;
+  margin-top: 5%;
 }
-.contact-me-container h2 a {
+#contact-me-container a {
   color: #8B5D41;
   text-decoration: none;
+}
+#contact-me-container a:hover {
+  color: #555548;
+  font-style: italic;
 }
 
 /*# sourceMappingURL=contact.css.map */

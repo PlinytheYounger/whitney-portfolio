@@ -20,11 +20,6 @@ const Header = () => {
                 <h1>Whitney Smith</h1>
                 <h2>Software Developer</h2>
             </div>
-            <div className="nav">
-                    <p>Github</p>
-                    <p>LinkedIn</p>
-                    <p>Email</p>
-            </div>
         </div>
     )
 }

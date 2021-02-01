@@ -1,22 +1,37 @@
 .about-container {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   padding-top: 2%;
   width: 100%;
 }
 
-.social-photo {
+.about {
   text-align: center;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 50%;
+  margin-left: 12%;
+  display: flex;
+  flex-direction: row;
+  vertical-align: center;
 }
-.social-photo .bio {
+.about .bio {
   line-height: 35px;
+  width: 35%;
+  padding-top: 20%;
 }
-.social-photo .image {
-  width: 100%;
+.about .image {
+  width: 45%;
+}
+.about .image img {
+  width: 80%;
+}
+
+@media only screen and (max-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+  .about {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+  }
 }
 
 /*# sourceMappingURL=about.css.map */

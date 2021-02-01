@@ -9,30 +9,24 @@
 .header {
     text-align: center;
     background-color: #D2BEB0;
-    height: 15vh;
-    padding-top: 1%;
+    height: 20vh;
+    padding-top: 2%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     .name > h1 {
         font-family: 'Lora', serif;
     }
-    .social-icons {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-      }
 }
 
 .nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    vertical-align: middle;
+    padding-bottom: 1%;
     div {
         a {
-            color: black;
+            color: #8B5D41;
             text-decoration: none;
         }
     }

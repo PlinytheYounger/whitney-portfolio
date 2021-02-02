@@ -27,10 +27,6 @@
         grid-template-columns: 40% 5% 40%;
         grid-template-rows: 45% 45% 45%;
         row-gap: 1%;
-        .project-container {
-            display: flex;
-            flex-direction: column;
-        }
         #container0 {
             grid-column: 1/4;
             grid-row: 1/2;
@@ -76,8 +72,14 @@
     padding-right: 5%;
 }
 
+// ********* IPHONE X PORTRAIT ******** //
 
-
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  .projects-container {
+      display: flex;
+      flex-direction: column;
+  }
+}
 
 
 

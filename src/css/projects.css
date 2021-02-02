@@ -20,10 +20,6 @@
   grid-template-rows: 45% 45% 45%;
   row-gap: 1%;
 }
-.projects-main .projects-container .project-container {
-  display: flex;
-  flex-direction: column;
-}
 .projects-main .projects-container #container0 {
   grid-column: 1/4;
   grid-row: 1/2;
@@ -63,6 +59,13 @@
 #info1 {
   order: 1;
   padding-right: 5%;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=projects.css.map */

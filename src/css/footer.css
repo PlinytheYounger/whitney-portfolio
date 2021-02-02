@@ -14,4 +14,10 @@
   justify-content: space-evenly;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .footer h2 {
+    font-size: 24px;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

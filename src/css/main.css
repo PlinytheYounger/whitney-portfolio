@@ -41,17 +41,13 @@ li {
   /* Styles */
 }
 /* iPhone X ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
-  .main {
-    background-color: pink;
-  }
-}
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .main {
-    width: 100%;
-  }
-}
 /* iPads (portrait and landscape) ----------- */
+/* iPhone 11 */
+/* 1792x828px at 326ppi */
+/* iPhone 12 & iPhone 12 Pro */
+/* 2532x1170 pixels at 460ppi */
+/* iPhone 12 Pro Max */
+/* 2778x1284 pixels at 458ppi */
 /* iPhone 6, 7, 8 ----------- */
 @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2) {
   /* Styles */

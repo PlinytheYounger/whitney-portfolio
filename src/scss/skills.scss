@@ -23,6 +23,7 @@ SAND = #E8E4E0
       justify-content: space-around;
       .shell {
         align-items: center;
+        width: 35%;
         .button {
             border-radius: 5%;
             background-color: #C5C4B2;
@@ -60,5 +61,10 @@ SAND = #E8E4E0
 
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  
+  button {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }

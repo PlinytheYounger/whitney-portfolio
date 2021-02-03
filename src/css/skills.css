@@ -23,6 +23,7 @@ SAND = #E8E4E0
 }
 .skills-container .skills-education-resume .shell {
   align-items: center;
+  width: 35%;
 }
 .skills-container .skills-education-resume .shell .button {
   border-radius: 5%;
@@ -53,6 +54,15 @@ SAND = #E8E4E0
 
 #changeHeight {
   height: 45vh;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  button {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
 }
 
 /*# sourceMappingURL=skills.css.map */

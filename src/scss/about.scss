@@ -52,6 +52,10 @@
 
 }
 
+//////////////////////////////////////////
+//*** MEDIA QUERIES
+//////////////////////////////////////////
+
 // ********* IPHONE X PORTRAIT ******** //
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
@@ -69,5 +73,49 @@
     .image {
       width: 80%;
     }
+  }
+}
+
+// ********* IPHONE X LANDSCAPE ******** //
+
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+// ********* IPHONE 11 PORTRAIT ******** //
+
+@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { 
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    .image {
+      width: 100%;
+      margin-right: 10%;
+      img {
+        width: 60%;
+      }
+    }
+    .bio {
+      width: 100%;
+      margin-right: 10%;
+    }
+  }
+}
+
+// ********* IPHONE 12 & 12 Pro PORTRAIT ******** //
+
+  @media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {   
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
 }

@@ -5,9 +5,9 @@ const Footer = () => {
     return(
         <div className="footer">
             <div className="social-icons">
-                <p>Github</p>
-                <p>LinkedIn</p>
-                <p>Gmail</p>
+                <a href="https://github.com/PlinytheYounger">Github</a>
+                <a href="https://www.linkedin.com/in/whitneyleesmith/">LinkedIn</a>
+                <a href="mailto:whitney.smith.lee@gmail.com?">Email</a>
             </div>
             <h2>
                 &copy; Whitney Smith. 2020.

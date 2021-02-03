@@ -12,6 +12,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    a {
+        color: #555548;
+    }
+    a:hover {
+        color: #555548;
+        font-style: underline;
+    }
 }
 
 

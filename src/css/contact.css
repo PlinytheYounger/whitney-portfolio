@@ -22,4 +22,10 @@ RUST: = #A13D2D
   font-style: italic;
 }
 
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  #contact-me-container a h2 {
+    font-size: 24px;
+  }
+}
+
 /*# sourceMappingURL=contact.css.map */

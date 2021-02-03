@@ -33,5 +33,22 @@
     vertical-align: center;
   }
 }
+@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+    text-align: center;
+    width: 100%;
+  }
+  .about .bio {
+    line-height: 25px;
+    width: 80%;
+    padding-top: 10%;
+  }
+  .about .image {
+    width: 80%;
+  }
+}
 
 /*# sourceMappingURL=about.css.map */

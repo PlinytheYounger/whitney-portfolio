@@ -3,7 +3,6 @@ import '../../css/projects.css';
 
 const ProjectElement = (props) => {
     const { name, gitHubUrl, description, photoUrl } = props.project;
-    console.log(props.id)
 
     return(
         <div className="project-container" id={`container${props.id}`}>

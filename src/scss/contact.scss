@@ -27,8 +27,8 @@ RUST: = #A13D2D
     }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  #contact-me-container {
+@media only screen and (max-width: 445px) {
+    #contact-me-container {
       a {
           h2 {
               font-size: 24px;

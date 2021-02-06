@@ -10,11 +10,9 @@ const ProjectElement = (props) => {
                 <img src={photoUrl} alt={`${name} website`} />
             </div> 
             <div className="project-info" id={`info${props.id}`}>
-                <div>
-                    <h4>{name}</h4> {/* embed link to project */}
-                    <a href={gitHubUrl}>See My Code</a>
-                    <p>{description}</p>                    
-                </div>
+                <h4>{name}</h4> {/* embed link to project */}
+                <a href={gitHubUrl}><p>Code coming soon!</p></a>
+                <p>{description}</p>                    
             </div>
         </div>
     )

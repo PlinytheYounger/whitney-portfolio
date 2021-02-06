@@ -1,6 +1,7 @@
 import React from 'react';
 import '../../css/about.css';
 import Photo from '../../images/photo.jpg';
+import Contact from '../Contact/Contact'
 
 const About = () => {
 
@@ -12,11 +13,20 @@ const About = () => {
                     <div className="image">
                         <img src={Photo} alt="Whitney hiking in Vermont"></img>
                     </div>
-                    <div className="bio">
-                        <p>I am a creative, ambitious and organized software developer with an affinity for human-centered solutions. With a background in project & people management for a large-scale recruiting team, I am passionate about designing, building & shipping programs and tools that influence communities and people in a positive way.</p>
+                    <div className="blurb">
+                        <h2>Hi there!</h2>
+                        <p>I'm Whitney Smith and I'm looking for opportunities to build products that change the world.</p>
                     </div>
                 </div>
             </div>
+            <div id="bottom-border"></div>
+            <div className="about_me">
+                <h3>About Me:</h3>
+                <p>Ever since I was a kid I had an innate knack and interest in patterns and solving problems. Over the last few years, this has manifested in a quest for learning as much as possible about computer science and software engineering - fields in which the tenacity to find the best solutions and coming up with new ideas, is celebrated.</p>
+                <p>Currently I'm open to connecting on opportunities to turn my interest into a career. Please check out here for my most recent projects.</p>
+            </div>
+            <div id="bottom-border"></div>
+                    <Contact />
         </>
     )
 }

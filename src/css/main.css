@@ -26,10 +26,9 @@ li {
 }
 
 #bottom-border {
-  width: 90%;
+  width: 100%;
   height: 4px;
   background: #8B5D41;
-  margin-top: 3%;
 }
 
 /* Desktops and laptops ----------- */

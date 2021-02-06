@@ -12,11 +12,11 @@ const Container = () => {
             <Header />
             <div className="content">
             <Switch>
-                    <Route path="/about">
-                        <About />
-                    </Route>
                     <Route path="/projects">
                         <Projects />
+                    </Route>
+                    <Route path="/">
+                        <About />
                     </Route>
 
             </Switch>

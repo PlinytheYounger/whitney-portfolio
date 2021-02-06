@@ -3,7 +3,6 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import About from './About/About';
 import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
 import { Route, Switch } from 'react-router-dom';
 import '../css/main.css';
 

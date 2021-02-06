@@ -82,7 +82,7 @@ h2 {
   font-style: bold;
 }
 
-@media only screen and (max-width: 400px) and (orientation: portrait) {
+@media only screen and (max-width: 550px) {
   .projects-main {
     padding-top: 5%;
   }

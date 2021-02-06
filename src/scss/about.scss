@@ -54,6 +54,7 @@ SAND = #E8E4E0
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
+    padding-bottom: 5%;
   }
 
   
@@ -63,7 +64,7 @@ SAND = #E8E4E0
 //////////////////////////////////////////
 
 // ********* IPHONE X PORTRAIT ******** //
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 550px) {
     .about-container {
       // height: 60vh;
     }
@@ -85,94 +86,7 @@ SAND = #E8E4E0
   }
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  .about {
-    display: flex;
-    flex-direction: column;
-    vertical-align: center;
-    text-align: center;
-    width: 100%;
-    .blurb {
-      line-height: 25px;
-      width: 80%;
-      padding-top: 10%;
-    }
-    .image {
-      width: 80%;
-    }
-  }
-}
 
-// ********* IPHONE X LANDSCAPE ******** //
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
-// ********* IPHONE 11 PORTRAIT ******** //
 
-@media only screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) { 
-  .about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    .image {
-      width: 100%;
-      margin-right: 10%;
-      img {
-        width: 60%;
-      }
-    }
-    .blurb {
-      width: 100%;
-      margin-right: 10%;
-    }
-  }
-}
-
-// ********* IPHONE 12 & 12 Pro PORTRAIT ******** //
-@media only screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) {   
-  .about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    .image {
-      width: 100%;
-    }
-    .blurb {
-      width: 100%;
-    }
-  }
-}
-
-// ********* IPHONE 12 Pro MAX ******** //
-
-@media only screen 
-    and (device-width: 428px) 
-    and (device-height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) { 
-  .about {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    .image {
-      width: 100%;
-      img {
-        width: 60%;
-      }
-    }
-    .blurb {
-      width: 100%;
-
-    }
-  }
-}

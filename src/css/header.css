@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 .header {
   text-align: center;
-  height: 10vh;
+  height: 12vh;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -13,7 +13,7 @@
 }
 
 .nav {
-  width: 30%;
+  width: 25%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -29,19 +29,7 @@
   text-decoration: none;
 }
 
-@media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
-  .header, .nav, .name {
-    width: 100%;
-  }
-
-  .name h1 {
-    font-size: 30px;
-  }
-  .name h2 {
-    font-size: 20px;
-  }
-}
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 550px) {
   .nav {
     flex-direction: column;
   }

@@ -10,19 +10,19 @@ const Projects = () => {
     const projectArr = [
         {
             name: 'Lobbyists & Bills',
-            gitHubUrl: '',
+            gitHubUrl: 'Coming Soon!',
             description: 'Have you ever wanted to see exactly what your constituent brings to the floor once they are elected? Data trends for bills.',
             photoUrl: image1 
         },
         {
             name: 'Study Buddy',
-            gitHubUrl: '',
+            gitHubUrl: 'Coming Soon!',
             description: 'One stop shop to track your upcoming interviews, create a study plan and connect with others to schedule interview practice!',
             photoUrl: image2 
         },
         {
             name: 'Travel Ease',
-            gitHubUrl: '',
+            gitHubUrl: 'Coming Soon!',
             description: 'All in one, easy to use travel trip planner. All of your lodging, receipts, tickets and information in one spot. Invite others from your group to join so you can easily split expenses and collaborate!',
             photoUrl: image3  
         },

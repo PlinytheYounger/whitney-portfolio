@@ -4,7 +4,7 @@ import Footer from './Footer/Footer';
 import About from './About/About';
 import Projects from './Projects/Projects';
 import Contact from './Contact/Contact';
-import Skills from './Skills/Skills';
+import { Route, Switch } from 'react-router-dom';
 import '../css/main.css';
 
 const Container = () => {
@@ -12,14 +12,15 @@ const Container = () => {
         <div className="main">
             <Header />
             <div className="content">
-                <About />
-                <div id="bottom-border"></div>
-                <Projects />
-                <div id="bottom-border"></div>
-                <Skills />
-                <div id="bottom-border"></div> 
-                <Contact />
+            <Switch>
+                    <Route path="/about">
+                        <About />
+                    </Route>
+                    <Route path="/projects">
+                        <Projects />
+                    </Route>
 
+            </Switch>
             </div>
             <Footer />
         </div>

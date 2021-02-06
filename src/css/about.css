@@ -1,36 +1,65 @@
+/* COLOR PALETTE 
+ADOBE = #8B5D41
+PINE = #555548
+SAGE = #C5C4B2
+PUEBLO = #D2BEB0
+CLAY = #D0C6BC
+SAND = #E8E4E0
+*/
 .about-container {
   align-items: center;
-  padding-top: 2%;
+  padding-top: 3%;
   width: 100%;
+  background-color: #C5C4B2;
+  padding-bottom: 3%;
+  height: 50%;
 }
 
 .about {
   text-align: center;
-  padding-top: 2%;
   padding-bottom: 2%;
   margin-left: 12%;
   display: flex;
   flex-direction: row;
   vertical-align: center;
 }
-.about .bio {
+.about .blurb {
   line-height: 35px;
   width: 35%;
-  padding-top: 20%;
+  padding-top: 16%;
+  padding-left: 3%;
+  position: relative;
 }
 .about .image {
   width: 45%;
+  position: relative;
 }
 .about .image img {
   width: 80%;
 }
 
-@media only screen and (max-device-width: 375px) and (max-device-height: 812px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3) {
+.about_me {
+  height: 30%;
+  line-height: 35px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+@media only screen and (max-width: 450px) {
   .about {
-    text-align: center;
     display: flex;
     flex-direction: column;
     vertical-align: center;
+    text-align: center;
+  }
+  .about .blurb {
+    line-height: 25px;
+    width: 80%;
+    padding-top: 10%;
+  }
+  .about .image {
+    width: 80%;
   }
 }
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -41,7 +70,7 @@
     text-align: center;
     width: 100%;
   }
-  .about .bio {
+  .about .blurb {
     line-height: 25px;
     width: 80%;
     padding-top: 10%;
@@ -71,7 +100,7 @@
   .about .image img {
     width: 60%;
   }
-  .about .bio {
+  .about .blurb {
     width: 100%;
     margin-right: 10%;
   }
@@ -83,6 +112,30 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+  }
+  .about .image {
+    width: 100%;
+  }
+  .about .blurb {
+    width: 100%;
+  }
+}
+@media only screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .about .image {
+    width: 100%;
+  }
+  .about .image img {
+    width: 60%;
+  }
+  .about .blurb {
+    width: 100%;
   }
 }
 

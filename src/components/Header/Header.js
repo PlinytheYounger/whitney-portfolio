@@ -1,25 +1,24 @@
 import React from 'react';
 import '../../css/header.css';
-import { HashLink } from 'react-router-hash-link';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
     return(
         <div className="header">
-            <div className="nav">
-                <div>
-                    <HashLink smooth to="/skills#skills">Skills</HashLink>
-                </div>
-                <div>
-                    <HashLink smooth to="/projects#projects">Projects</HashLink>
-                </div>
-                <div>
-                    <HashLink smooth to="/contact#contact">Contact</HashLink>
-                </div>
-            </div>
             <div className="name">
                 <h1>Whitney Smith</h1>
-                <h2>Software Developer</h2>
             </div>
+            <div className="nav">
+                <div>
+                    <Link to="/about">About</Link>
+                </div>
+                <div>
+                    <Link to="/projects">Projects</Link>
+                </div>
+                    {/* <div>
+                        <Link to="/media">Media</Link>
+                    </div> */}
+                </div>
         </div>
     )
 }

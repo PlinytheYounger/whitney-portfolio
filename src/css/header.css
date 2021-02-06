@@ -1,22 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap");
 .header {
   text-align: center;
-  background-color: #D2BEB0;
-  height: 20vh;
-  padding-top: 2%;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: left;
+  vertical-align: center;
 }
 .header .name > h1 {
   font-family: "Lora", serif;
+  padding-right: 3%;
 }
 
 .nav {
+  width: 30%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding-top: 5%;
   padding-bottom: 1%;
+}
+.nav div {
+  vertical-align: center;
+  padding-right: 5%;
 }
 .nav div a {
   color: #8B5D41;
@@ -33,6 +39,11 @@
   }
   .name h2 {
     font-size: 20px;
+  }
+}
+@media only screen and (max-width: 445px) {
+  .nav {
+    flex-direction: column;
   }
 }
 

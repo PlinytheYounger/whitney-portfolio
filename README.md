@@ -3,7 +3,7 @@
 - [LinkedIn](https://www.linkedin.com/in/whitneyleesmith/)
 - Contact: whitney.smith.lee@gmail.com
 
-I am a creative, ambitious and organized software engineer with an affinity for human-centered solutions and scalable systems. With a background in project & people managmenet for a large-scale recruiting team, I have over the past few years worked towards becoming a software engineer through alternative means, including a General Assembly immersive and continued self-teaching and learning. 
+I am a creative, ambitious and organized software engineer with an affinity for human-centered solutions and scalable systems. With a background in project & people management for a large-scale recruiting team, I have over the past few years worked towards becoming a software engineer through alternative means, including a General Assembly immersive and continued self-teaching and learning. 
 
 I am passionate about finding a role where I can design, build and ship programs and tools that influence & impact communities and people in a positive way.
 

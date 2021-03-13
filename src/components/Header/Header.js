@@ -15,10 +15,15 @@ const Header = () => {
                 <div>
                     <Link to="/projects">Projects</Link>
                 </div>
-                    {/* <div>
-                        <Link to="/media">Media</Link>
-                    </div> */}
+                {/* <div>
+                    <Link to="/media">Media</Link>
+                </div> */}
+                <div>
+                    <a href="https://github.com/PlinytheYounger/whitney-portfolio">
+                        Source Code & Resume
+                    </a>
                 </div>
+            </div>
         </div>
     )
 }

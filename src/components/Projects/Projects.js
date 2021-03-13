@@ -9,22 +9,22 @@ import image3 from '../../images/photo3.jpeg';
 const Projects = () => {
     const projectArr = [
         {
-            name: 'Lobbyists & Bills',
-            gitHubUrl: 'Coming Soon!',
-            description: 'Have you ever wanted to see exactly what your constituent brings to the floor once they are elected? Data trends for bills.',
-            photoUrl: image1 
-        },
-        {
             name: 'Study Buddy',
-            gitHubUrl: 'Coming Soon!',
+            gitHubUrl: 'https://github.com/PlinytheYounger/study_buddy_frontend',
             description: 'One stop shop to track your upcoming interviews, create a study plan and connect with others to schedule interview practice!',
             photoUrl: image2 
         },
         {
             name: 'Travel Ease',
-            gitHubUrl: 'Coming Soon!',
+            gitHubUrl: '',
             description: 'All in one, easy to use travel trip planner. All of your lodging, receipts, tickets and information in one spot. Invite others from your group to join so you can easily split expenses and collaborate!',
             photoUrl: image3  
+        },
+        {
+            name: 'Lobbyists & Bills',
+            gitHubUrl: '',
+            description: 'Have you ever wanted to see exactly what your constituent brings to the floor once they are elected? Data trends for bills.',
+            photoUrl: image1 
         },
     ]
     return(

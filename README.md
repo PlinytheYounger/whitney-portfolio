@@ -1,17 +1,17 @@
 # Whitney Smith - Software Engineer
-[Personal Website](whitneysmith.dev)
-[LinkedIn](https://www.linkedin.com/in/whitneyleesmith/)
-Contact: whitney.smith.lee@gmail.com
+- [Personal Website](whitneysmith.dev)
+- [LinkedIn](https://www.linkedin.com/in/whitneyleesmith/)
+- Contact: whitney.smith.lee@gmail.com
 
-### I am a creative, ambitious and organized software engineer with an affinity for human-centered solutions and scalable systems. With a background in project & people managmenet for a large-scale recruiting team, I have over the past few years worked towards becoming a software engineer through alternative means, including a General Assembly immersive and continued self-teaching and learning. 
+I am a creative, ambitious and organized software engineer with an affinity for human-centered solutions and scalable systems. With a background in project & people managmenet for a large-scale recruiting team, I have over the past few years worked towards becoming a software engineer through alternative means, including a General Assembly immersive and continued self-teaching and learning. 
 
-### I am passionate about finding a role where I can design, build and ship programs and tools that influence & impact communities and people in a positive way.
+I am passionate about finding a role where I can design, build and ship programs and tools that influence & impact communities and people in a positive way.
 
 ## Projects
-### Escape
+### [Escape](https://github.com/PlinytheYounger/travel-client)
 - MERN full stack travel application to plan your travel itineraries with friends and family. Future features include a wallet, photo uploading and chat functionality.
 
-### Study Buddy
+### [Study Buddy](https://github.com/PlinytheYounger/study_buddy_frontend)
 - React + Rails full stack application to help software engineers track & plan for upcoming interviews based on current skill sets.
 
 ## Experience

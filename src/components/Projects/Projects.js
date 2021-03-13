@@ -16,7 +16,7 @@ const Projects = () => {
         },
         {
             name: 'Travel Ease',
-            gitHubUrl: '',
+            gitHubUrl: 'https://github.com/PlinytheYounger/escape-client',
             description: 'All in one, easy to use travel trip planner. All of your lodging, receipts, tickets and information in one spot. Invite others from your group to join so you can easily split expenses and collaborate!',
             photoUrl: image3  
         },

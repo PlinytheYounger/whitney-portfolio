@@ -14,6 +14,9 @@ I am passionate about finding a role where I can design, build and ship programs
 ### [Study Buddy](https://github.com/PlinytheYounger/study_buddy_frontend)
 - React + Rails full stack application to help software engineers track & plan for upcoming interviews based on current skill sets.
 
+### [Cribbage](https://github.com/PlinytheYounger/Cribbage)
+- React SPA application re-creating the classic game of Cribbage.
+
 ## Experience
 
 ### Software Engineering Immersive Flex - Instructional Assistant

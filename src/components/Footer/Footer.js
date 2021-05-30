@@ -10,7 +10,7 @@ const Footer = () => {
                 <a href="mailto:whitney.smith.lee@gmail.com?">Email</a>
             </div>
             <h2>
-                &copy; Whitney Smith. 2020.
+                &copy; Whitney Smith 2021
             </h2>
         </div>
     )

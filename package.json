@@ -15,6 +15,7 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "browserslist": "^4.16.6",
+    "chokidar2": "^2.0.0",
     "dns-packet": "^5.2.3",
     "hosted-git-info": "^2.8.9",
     "immer": "^9.0.7",

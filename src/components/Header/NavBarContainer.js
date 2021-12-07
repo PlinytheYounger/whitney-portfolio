@@ -30,10 +30,16 @@ const NavBarContainer = () => {
                     {NavBarData.map((item, index) => {
                         return (
                             <li key={index} className={item.class}>
+                                {item.path ? 
                                 <Link to={item.path} className="list-item-link">
                                     <span>{item.icon}</span>
                                     <span>{item.title}</span>
-                                </Link>
+                                </Link> 
+                                : 
+                                <a href={item.url} className="list-item-link">
+                                    <span>{item.icon}</span>
+                                    <span>{item.title}</span>
+                                </a>}
                             </li>
                         )
                     })}

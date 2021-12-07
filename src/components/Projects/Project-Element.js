@@ -6,15 +6,18 @@ const ProjectElement = (props) => {
 
     return(
         <div className="project-container" id={`container${props.id}`}>
+            <div className="project-info" id={`info${props.id}`}>
+                <a href={websiteUrl}>
+                    <h4>{name}</h4>
+                </a>
+                    <a href={gitHubUrl}>
+                        <p><b>{gitHubUrl ? "Source Code Here" : "Code coming soon!"}</b></p>
+                    </a>
+                    <p>{description}</p>         
+            </div>
             <div className="project-card" id={`card${props.id}`}>
                 <img src={photoUrl} alt={`${name} website`} />
             </div> 
-            <div className="project-info" id={`info${props.id}`}>
-                <h4>{name}</h4>
-                <a href={websiteUrl}><p>{websiteUrl ? "View Website" : "Website Coming soon!"}</p></a>
-                <a href={gitHubUrl}><p>{gitHubUrl ? "Source Code Here" : "Code coming soon!"}</p></a>
-                <p>{description}</p>                    
-            </div>
         </div>
     )
 }

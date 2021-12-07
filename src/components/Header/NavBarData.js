@@ -27,19 +27,19 @@ const NavBarData = [
     },
     {
         title: 'Resume',
-        path: 'https://github.com/PlinytheYounger/whitney-portfolio',
+        url: 'https://github.com/PlinytheYounger/whitney-portfolio',
         icon: <RiFilePaper2Fill />,
         class: 'nav-text'
     },
     {
         title: 'LinkedIn',
-        path: 'https://www.linkedin.com/in/whitneyleesmith/',
+        url: 'https://www.linkedin.com/in/whitneyleesmith/',
         icon: <AiFillLinkedin />,
         class: 'nav-text'
     },
     {
         title: 'GitHub',
-        path: 'https://github.com/PlinytheYounger',
+        url: 'https://github.com/PlinytheYounger',
         icon: <FaGithub />,
         class: 'nav-text'
     }

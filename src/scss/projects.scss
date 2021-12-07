@@ -23,6 +23,22 @@ h2 {
     height: 100%;
 }
 
+#card0 > img {
+    width: 100%;
+}
+
+#card1 > img {
+    width: 110%
+}
+
+#card2 > img {
+    width: 100%;
+}
+
+#card3 > img {
+    width: 100%;
+}
+
 .projects-main {
     height: 100%;
     background-color: #F0DAC5;
@@ -31,63 +47,40 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
     .projects-container {
+        padding-top: 6%;
         background-color: #F0DAC5;
-        padding-bottom: 25%;
         display: grid;
-        justify-content: center;
-        grid-template-columns: 40% 5% 40%;
-        grid-template-rows: 45% 45% 45%;
+        justify-content: space-around;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 45% 45%;
         row-gap: 1%;
-        #container0 {
-            grid-column: 1/4;
+        // column-gap: 2%;
+        .project-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            background-color: #F0DAC5;
+            padding-bottom: 15%;
+        }
+        #container0: {
+            grid-column: 1/2;
             grid-row: 1/2;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            justify-content: space-around;
-            background-color: #F0DAC5;
-            margin-bottom: 2%;
         }
-        #container1 {
-            grid-column: 1/4;
+        #container1: {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+        #container2: {
+            grid-column: 1/2;
             grid-row: 2/3;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            justify-content: space-around;
-            background-color: #F0DAC5;
-            margin-bottom: 2%;
         }
-        #container2 {
-            grid-column: 1/4;
-            grid-row: 3/4;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            text-align: center;
-            justify-content: space-around;
-            background-color: #F0DAC5;
-            margin-bottom: 2%;
+        #container3: {
+            grid-column: 2/3;
+            grid-row: 2/3;
         }
     }
-}
-
-
-#card1 {
-    order: 2;
-}
-
-#info0, #info2 {
-    padding-left: 5%;
-}
-
-#info1 {
-    order: 1;
-    padding-right: 5%;
 }
 
 .project-info {
@@ -101,24 +94,8 @@ h2 {
 .projects-main {
         padding-top: 5%;
         .projects-container {
-            grid-template-columns: 100%;
-            grid-template-rows: 35% 35% 35%;
-            #container0, #container1, #container2 {
-                grid-column: 1/2;
-                grid-row: 1/2;
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-            #container0 {
-                grid-row: 1/2;
-            }
-            #container1 {
-                grid-row: 2/3; 
-            }
-            #container2 {
-                grid-row: 3/4;
-            }
+            display: flex;
+            flex-direction: column;
         }
     }
 
@@ -142,10 +119,10 @@ h2 {
         order: 1;
     }
 
-    #info0, #info1, #info2 {
-        padding-left: 1%;
-        padding-right: 1%;
-    }
+    // #info0, #info1, #info2 {
+    //     padding-left: 1%;
+    //     padding-right: 1%;
+    // }
 }
 // ********* IPHONE X PORTRAIT ******** //
 

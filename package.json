@@ -34,7 +34,8 @@
     "sass": "^1.30.0",
     "ssri": "^8.0.1",
     "url-parse": "^1.5.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yarn": "^1.22.17"
   },
   "scripts": {
     "start": "react-scripts start",

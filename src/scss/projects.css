@@ -1,22 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-/* COLOR PALETTE 
-LIGHT BROWN: #F0DAC5
-NAVY BLUE: #1C2340
-MAGENTA: #50223C
-*/
 h2 {
   text-align: center;
   padding-top: 2%;
 }
 
 .content {
-  color: #1C2340;
+  color: #555548;
   height: 100%;
 }
 
 .projects-main {
   height: 100%;
-  background-color: #F0DAC5;
+  background-color: #C5C4B2;
   padding-top: 2%;
   display: flex;
   flex-direction: column;
@@ -25,7 +19,7 @@ h2 {
   padding-bottom: 10%;
 }
 .projects-main .projects-container {
-  background-color: #F0DAC5;
+  background-color: #C5C4B2;
   padding-bottom: 25%;
   display: grid;
   justify-content: center;
@@ -41,7 +35,8 @@ h2 {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  background-color: #F0DAC5;
+  background-color: #C5C4B2;
+  border: solid 1px #555548;
   margin-bottom: 2%;
 }
 .projects-main .projects-container #container1 {
@@ -52,7 +47,8 @@ h2 {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  background-color: #F0DAC5;
+  background-color: #C5C4B2;
+  border: solid 1px #555548;
   margin-bottom: 2%;
 }
 .projects-main .projects-container #container2 {
@@ -63,7 +59,8 @@ h2 {
   align-items: center;
   text-align: center;
   justify-content: space-around;
-  background-color: #F0DAC5;
+  background-color: #C5C4B2;
+  border: solid 1px #555548;
   margin-bottom: 2%;
 }
 
@@ -81,7 +78,7 @@ h2 {
 }
 
 .project-info a {
-  color: #1C2340;
+  color: #555548;
   font-style: bold;
 }
 

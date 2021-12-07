@@ -2,6 +2,14 @@
 // PROJECTS
 //######################
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* COLOR PALETTE 
+LIGHT BROWN: #F0DAC5
+NAVY BLUE: #1C2340
+MAGENTA: #50223C
+*/
+
 // main div > 'projects-container'
 // each project div class > 'project container' id > 'project-NUMBER-container'
 
@@ -11,13 +19,13 @@ h2 {
 }
 
 .content {
-    color: #555548;
+    color: #1C2340;
     height: 100%;
 }
 
 .projects-main {
     height: 100%;
-    background-color: #C5C4B2;
+    background-color: #F0DAC5;
     padding-top: 2%;
     display: flex;
     flex-direction: column;
@@ -25,7 +33,7 @@ h2 {
     align-items: center;
     padding-bottom: 10%;
     .projects-container {
-        background-color: #C5C4B2;
+        background-color: #F0DAC5;
         padding-bottom: 25%;
         display: grid;
         justify-content: center;
@@ -40,8 +48,7 @@ h2 {
             align-items: center;
             text-align: center;
             justify-content: space-around;
-            background-color: #C5C4B2;
-            border: solid 1px #555548;
+            background-color: #F0DAC5;
             margin-bottom: 2%;
         }
         #container1 {
@@ -52,8 +59,7 @@ h2 {
             align-items: center;
             text-align: center;
             justify-content: space-around;
-            background-color: #C5C4B2;
-            border: solid 1px #555548;
+            background-color: #F0DAC5;
             margin-bottom: 2%;
         }
         #container2 {
@@ -64,8 +70,7 @@ h2 {
             align-items: center;
             text-align: center;
             justify-content: space-around;
-            background-color: #C5C4B2;
-            border: solid 1px #555548;
+            background-color: #F0DAC5;
             margin-bottom: 2%;
         }
     }
@@ -87,7 +92,7 @@ h2 {
 
 .project-info {
     a {
-        color: #555548;
+        color: #1C2340;
         font-style: bold;
     }
 }

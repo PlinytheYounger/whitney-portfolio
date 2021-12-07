@@ -1,54 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 /* COLOR PALETTE 
-ADOBE = #8B5D41
-PINE = #555548
-SAGE = #C5C4B2
-PUEBLO = #D2BEB0
-CLAY = #D0C6BC
-SAND = #E8E4E0
+LIGHT BROWN: #F0DAC5
+NAVY BLUE: #1C2340
+MAGENTA: #50223C
 */
 .about-container {
+  font-family: "Lato";
   align-items: center;
-  padding-top: 3%;
+  padding-top: 7%;
   width: 100%;
-  background-color: #C5C4B2;
+  background-color: #F0DAC5;
   padding-bottom: 3%;
-  height: 50%;
+  height: 80vh;
 }
 
 .about {
   text-align: center;
-  padding-bottom: 2%;
-  margin-left: 12%;
+  padding-bottom: 3%;
   display: flex;
   flex-direction: row;
   vertical-align: center;
 }
 .about .blurb {
-  line-height: 35px;
-  width: 35%;
-  padding-top: 16%;
+  line-height: 40px;
+  vertical-align: center;
+  font-size: 18px;
+  width: 45%;
   padding-left: 3%;
+  padding-top: 3%;
   position: relative;
 }
+.about .blurb a {
+  color: #1C2340;
+  text-decoration: none;
+}
+.about .blurb a:hover {
+  color: #50223C;
+  font-style: italic;
+}
 .about .image {
+  margin-left: 4%;
   width: 45%;
   position: relative;
 }
 .about .image img {
-  width: 80%;
+  width: 70%;
 }
 
-.about_me {
-  height: 30%;
-  line-height: 35px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+.about-middle-divider {
+  border: 3px solid #50223C;
 }
 
-@media only screen and (max-width: 550px) {
+.bottom-border {
+  border: 3px solid #50223C;
+}
+
+#link_projects {
+  color: #50223C;
+}
+
+@media only screen and (max-width: 700px) {
   .about {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     vertical-align: center;
@@ -61,6 +74,16 @@ SAND = #E8E4E0
   }
   .about .image {
     width: 80%;
+  }
+
+  a {
+    color: #1C2340;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #50223C;
+    font-style: italic;
   }
 }
 

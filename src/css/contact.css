@@ -1,26 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
 /* COLOR PALETTE 
-ADOBE = #8B5D41
-PINE = #555548
-SAGE = #C5C4B2
-PUEBLO = #D2BEB0
-CLAY = #D0C6BC
-SAND = #E8E4E0
-RUST: = #A13D2D
+LIGHT BROWN: #F0DAC5
+NAVY BLUE: #1C2340
+MAGENTA: #50223C
 */
 #contact-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
-  padding-bottom: 5%;
+  justify-content: space-between;
+  width: 100%;
+  height: 15vh;
+  padding-top: 2%;
 }
 #contact-me-container a {
-  color: #8B5D41;
+  color: #1C2340;
   text-decoration: none;
 }
 #contact-me-container a:hover {
-  color: #555548;
+  color: #50223C;
   font-style: italic;
+}
+
+.bottom-border {
+  border: 3px solid #50223C;
+  width: 100%;
 }
 
 @media only screen and (max-width: 445px) {

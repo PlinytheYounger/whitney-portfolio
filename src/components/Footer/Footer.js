@@ -4,14 +4,9 @@ import '../../css/footer.css'
 const Footer = () => {
     return(
         <div className="footer">
-            <div className="social-icons">
-                <a href="https://github.com/PlinytheYounger">Github</a>
-                <a href="https://www.linkedin.com/in/whitneyleesmith/">LinkedIn</a>
-                <a href="mailto:whitney.smith.lee@gmail.com?">Email</a>
-            </div>
-            <h2>
+            <h4>
                 &copy; Whitney Smith 2021
-            </h2>
+            </h4>
         </div>
     )
 }

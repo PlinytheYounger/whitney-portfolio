@@ -80,6 +80,8 @@ MAGENTA: #50223C
 .nav-menu.active {
     right: 0;
     transition: 350ms;
+    position: fixed;
+    z-index: 1;
     background-color: #1C2340;
 }
 

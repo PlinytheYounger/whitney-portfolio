@@ -16,6 +16,7 @@ li {
   background-color: #F0DAC5;
   color: #1C2340;
   width: 100vw;
+  height: 100%;
 }
 .main .content {
   display: flex;

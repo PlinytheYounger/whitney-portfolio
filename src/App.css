@@ -4,9 +4,11 @@ body {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
     margin: 0 auto;
+    background-color: #F0DAC5;
   }
 
 .App {
+    background-color: #F0DAC5;
     height: 100%;
     width: 100%;
   }

@@ -27,7 +27,7 @@ const NavBarData = [
     },
     {
         title: 'Resume',
-        url: 'https://github.com/PlinytheYounger/whitney-portfolio',
+        url: '/resume',
         icon: <RiFilePaper2Fill />,
         class: 'nav-text'
     },

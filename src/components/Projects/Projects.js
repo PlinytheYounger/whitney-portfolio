@@ -5,10 +5,25 @@ import image1 from '../../images/photo1.jpeg';
 import image2 from '../../images/photo2.jpeg';
 import image3 from '../../images/escape_home.png';
 import image4 from '../../images/tangiblematerials.png';
-
+import image5 from '../../images/image5.png';
+import image6 from '../../images/image6.png';
 
 const Projects = () => {
     const projectArr = [
+        {
+            name: 'Ferney Common Ground',
+            websiteURL: '',
+            gitHubUrl: '',
+            description: 'I was contracted to build this website from the ground up for a new business. It is currently in development stage, but hoping to launch in the next couple of weeks.',
+            photoUrl: image6
+        },
+        {
+            name: 'Revive Tailoring & Alterations',
+            websiteURL: '',
+            gitHubUrl: '',
+            description: 'This is a project currently in development for a startup. I will be in charge of everything from designs to front-end and back-end development.',
+            photoUrl: image5
+        },
         {            
             name: 'Tangible Materials',
             websiteUrl: 'https://tangiblematerials.com',
@@ -30,13 +45,6 @@ const Projects = () => {
             gitHubUrl: 'https://github.com/PlinytheYounger/study_buddy_frontend',
             description: 'One stop shop to track your upcoming interviews, create a study plan and connect with others to schedule interview practice!',
             photoUrl: image2 
-        },
-        {
-            name: 'Lobbyists & Bills',
-            websiteUrl: '',
-            gitHubUrl: '',
-            description: 'Have you ever wanted to see exactly what your constituent brings to the floor once they are elected? Data trends for bills.',
-            photoUrl: image1 
         },
     ]
     return(

@@ -8,6 +8,15 @@ I am a creative, ambitious and organized software engineer with an affinity for 
 I am passionate about finding a role where I can design, build and ship programs and tools that influence & impact communities and people in a positive way.
 
 ## Projects
+### [Revive](tbd)
+- Work in progress - Passion project creating a mobile app & website for tailoring & alterations business. React, React Native, AWS, SQL.
+
+### [Ferney Common Ground](https://github.com/PlinytheYounger/ferney_farms)
+- Work in progress - Full stack website for a new company, Ferney Common Ground. I provided full service (i.e. design, mockups, wireframes), and am currently in the build process. This project is using React, Bootstrap, CSS, Node.js and Express.js.
+
+### [Tangible](http://tangiblematerials.com/)
+- Landing page developed for a startup, Tangible Materials, utilizing React and CSS. I provided original mockups / design as well as start to finish development and QA.
+
 ### [Escape](https://github.com/PlinytheYounger/travel-client)
 - MERN full stack travel application to plan your travel itineraries with friends and family. Future features include a wallet, photo uploading and chat functionality.
 

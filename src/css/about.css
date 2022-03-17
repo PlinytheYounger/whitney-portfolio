@@ -59,21 +59,26 @@ MAGENTA: #50223C
   color: #50223C;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   .about {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    vertical-align: center;
-    text-align: center;
+    align-items: center;
   }
   .about .blurb {
     line-height: 25px;
     width: 80%;
-    padding-top: 10%;
+    padding-top: 5%;
   }
   .about .image {
     width: 80%;
+  }
+  .about .about-middle-divider {
+    border: 3px solid #50223C;
+    height: 5%;
+    width: 80%;
+    margin-top: 8%;
   }
 
   a {

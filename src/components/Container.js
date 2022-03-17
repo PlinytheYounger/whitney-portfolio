@@ -14,11 +14,11 @@ const Container = () => {
             <Header />
             <div className="content">
                 <Switch>
-                        <Route path="/projects">
-                            <Projects />
-                        </Route>
                         <Route path="/resume">
                             <Resume />
+                        </Route>
+                        <Route path="/projects">
+                            <Projects />
                         </Route>
                         <Route path="/media">
                             <Media />

@@ -12,7 +12,7 @@ const Projects = () => {
         {
             name: 'Ferney Common Ground',
             websiteURL: '',
-            gitHubUrl: '',
+            gitHubUrl: 'https://github.com/PlinytheYounger/ferney_common_ground',
             description: 'I was contracted to build this website from the ground up for a new business. It is currently in development stage, but hoping to launch in the next couple of weeks.',
             photoUrl: image6
         },

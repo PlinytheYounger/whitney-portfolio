@@ -1,7 +1,6 @@
 import React from 'react';
 import '../../css/projects.css';
 import ProjectElement from './Project-Element';
-import image1 from '../../images/photo1.jpeg';
 import image2 from '../../images/photo2.jpeg';
 import image3 from '../../images/escape_home.png';
 import image4 from '../../images/tangiblematerials.png';

@@ -27,7 +27,7 @@ const NavBarData = [
     },
     {
         title: 'Resume',
-        url: '/resume',
+        url: 'https://drive.google.com/file/d/1C4wlfT9rrg8XLTCEM0m5qZFvju8XEkH-/view?usp=sharing',
         icon: <RiFilePaper2Fill />,
         class: 'nav-text'
     },

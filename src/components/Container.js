@@ -3,7 +3,6 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import About from './About/About';
 import Projects from './Projects/Projects';
-import Resume from './Resume/Resume';
 import Media from './Media/Media';
 import { Route, Switch } from 'react-router-dom';
 import '../css/main.css';
@@ -14,18 +13,15 @@ const Container = () => {
             <Header />
             <div className="content">
                 <Switch>
-                        <Route path="/resume">
-                            <Resume />
-                        </Route>
-                        <Route path="/projects">
-                            <Projects />
-                        </Route>
-                        <Route path="/media">
-                            <Media />
-                        </Route>
-                        <Route path="/">
-                            <About />
-                        </Route>
+                    <Route path="/projects">
+                        <Projects />
+                    </Route>
+                    <Route path="/media">
+                        <Media />
+                    </Route>
+                    <Route path="/">
+                        <About />
+                    </Route>
                 </Switch>
             </div>
             <Footer />
